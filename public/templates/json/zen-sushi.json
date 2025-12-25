@@ -1,0 +1,588 @@
+{
+    "version": "3.0",
+    "id": "zen-sushi",
+    "name": "Zen Sushi",
+    "meta": {
+        "category": "Restaurant",
+        "orientation": "portrait"
+    },
+    "tokens": {
+        "colors": {
+            "primary": "#2c2c2c",
+            "secondary": "#6b6b6b",
+            "accent": "#d64045",
+            "background": "#f4f1ea",
+            "muted": "#e5e2db"
+        },
+        "fonts": {
+            "heading": "Cinzel",
+            "body": "Manrope"
+        }
+    },
+    "components": {
+        "pageTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 48,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.accent",
+                "textAlign": "center"
+            }
+        },
+        "subtitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 12,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "textAlign": "center",
+                "charSpacing": 200
+            }
+        },
+        "sectionTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 22,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.accent"
+            }
+        },
+        "menuItem": {
+            "type": "text",
+            "props": {
+                "fontSize": 15,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.primary"
+            }
+        },
+        "description": {
+            "type": "text",
+            "props": {
+                "fontSize": 11,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "lineHeight": 1.4
+            }
+        },
+        "divider": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.accent",
+                "height": 2
+            }
+        },
+        "thinDivider": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.muted",
+                "height": 1
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "cover",
+            "background": "$colors.background",
+            "layout": "centered",
+            "padding": 60,
+            "gap": 16,
+            "children": [
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "OMAKASE & SAKE",
+                        "fontSize": 14,
+                        "fontFamily": "$fonts.body",
+                        "fontWeight": "bold",
+                        "color": "$colors.accent",
+                        "textAlign": "center",
+                        "charSpacing": 300
+                    }
+                },
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "ZEN\nSUSHI",
+                        "fontSize": 72,
+                        "fontFamily": "$fonts.heading",
+                        "color": "$colors.primary",
+                        "textAlign": "center",
+                        "lineHeight": 0.95
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "use": "subtitle",
+                    "props": {
+                        "content": "AUTHENTIC JAPANESE CUISINE"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "omakase",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 18,
+            "children": [
+                {
+                    "use": "pageTitle",
+                    "props": {
+                        "content": "CHEF'S OMAKASE"
+                    }
+                },
+                {
+                    "use": "subtitle",
+                    "props": {
+                        "content": "LET THE CHEF DECIDE YOUR JOURNEY"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Sakura Set — $85"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "7-course seasonal selection with premium nigiri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Momiji Set — $120"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "10-course experience with wagyu and uni"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Kaze Set — $180"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Premium 14-course with sake pairing"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 10
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "SASHIMI"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "columns",
+                    "gap": 24,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Salmon — $16"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Tuna — $18"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Yellowtail — $17"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Octopus — $15"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Sea Bream — $19"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Uni — $28"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "nigiri-rolls",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 18,
+            "children": [
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "NIGIRI"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "columns",
+                    "gap": 24,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Salmon Nigiri — $8"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Tuna Nigiri — $9"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Eel Nigiri — $10"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Shrimp Nigiri — $7"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Scallop Nigiri — $11"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Wagyu Nigiri — $16"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Egg Nigiri — $5"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Ikura Nigiri — $12"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 10
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "SPECIALTY ROLLS"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Dragon Roll — $18"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Eel, cucumber, avocado, unagi sauce"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Spider Roll — $16"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Soft shell crab, cucumber, spicy mayo"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Rainbow Roll — $20"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "California roll topped with assorted sashimi"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Zen Signature — $24"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Toro, truffle, gold leaf, chef's special"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "drinks",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 18,
+            "children": [
+                {
+                    "use": "pageTitle",
+                    "props": {
+                        "content": "SAKE & DRINKS"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "PREMIUM SAKE"
+                    }
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Dassai 23 — $45"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Junmai Daiginjo, fruity and elegant"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Kubota Manju — $38"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Clean, smooth with subtle sweetness"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "House Sake — $12"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Hot or cold, carafe"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 10
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "OTHER BEVERAGES"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "columns",
+                    "gap": 24,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Green Tea — $4"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Asahi Beer — $7"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Ramune — $5"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Plum Wine — $9"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 20
+                },
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "いただきます\nItadakimasu",
+                        "fontSize": 14,
+                        "fontFamily": "$fonts.heading",
+                        "color": "$colors.secondary",
+                        "textAlign": "center"
+                    }
+                }
+            ]
+        }
+    ]
+}

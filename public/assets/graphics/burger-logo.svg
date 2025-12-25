@@ -1,0 +1,16 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Stencil/Cutout Circle (Two halves) -->
+<path d="M100 20 A 80 80 0 0 0 20 100 A 80 80 0 0 0 50 160" stroke="#FB923C" stroke-width="20" stroke-linecap="butt" fill="none"/>
+<path d="M150 160 A 80 80 0 0 0 180 100 A 80 80 0 0 0 100 20" stroke="#FB923C" stroke-width="20" stroke-linecap="butt" fill="none"/>
+<path d="M50 160 A 80 80 0 0 0 150 160" stroke="#FB923C" stroke-width="20" stroke-linecap="butt" fill="none"/>
+
+<!-- Fork -->
+<path d="M75 50 V 100" stroke="#FB923C" stroke-width="12" stroke-linecap="round"/>
+<path d="M60 50 V 80" stroke="#FB923C" stroke-width="8" stroke-linecap="round"/>
+<path d="M90 50 V 80" stroke="#FB923C" stroke-width="8" stroke-linecap="round"/>
+<path d="M75 100 V 150" stroke="#FB923C" stroke-width="12" stroke-linecap="round"/>
+
+<!-- Knife -->
+<path d="M125 150 V 100" stroke="#FB923C" stroke-width="12" stroke-linecap="round"/>
+<path d="M125 100 V 50 C 125 50 145 50 145 70 V 100 H 125" fill="#FB923C"/>
+</svg>

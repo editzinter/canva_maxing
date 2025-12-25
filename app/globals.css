@@ -1,0 +1,243 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --card: #ffffff;
+    --card-foreground: #0a0a0a;
+    --popover: #ffffff;
+    --popover-foreground: #0a0a0a;
+    --primary: #171717;
+    --primary-foreground: #fafafa;
+    --secondary: #f5f5f5;
+    --secondary-foreground: #171717;
+    --muted: #f5f5f5;
+    --muted-foreground: #737373;
+    --accent: #f5f5f5;
+    --accent-foreground: #171717;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #e5e5e5;
+    --input: #e5e5e5;
+    --ring: #0a0a0a;
+    --radius: 0.5rem;
+    --chart-1: #e76e50;
+    --chart-2: #2a9d8f;
+    --chart-3: #264653;
+    --chart-4: #f4a261;
+    --chart-5: #e9c46a;
+}
+
+.dark {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --card: #0a0a0a;
+    --card-foreground: #fafafa;
+    --popover: #0a0a0a;
+    --popover-foreground: #fafafa;
+    --primary: #fafafa;
+    --primary-foreground: #171717;
+    --secondary: #262626;
+    --secondary-foreground: #fafafa;
+    --muted: #262626;
+    --muted-foreground: #a3a3a3;
+    --accent: #262626;
+    --accent-foreground: #fafafa;
+    --destructive: #7f1d1d;
+    --destructive-foreground: #fafafa;
+    --border: #262626;
+    --input: #262626;
+    --ring: #d4d4d4;
+    --chart-1: #22005c;
+    --chart-2: #34495e;
+    --chart-3: #5f187a;
+    --chart-4: #9a031e;
+    --chart-5: #fb8b24;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --font-bebas: var(--font-bebas-neue);
+    --font-manrope: var(--font-manrope);
+    --font-playfair: var(--font-playfair);
+    --font-inter: var(--font-inter);
+    --font-roboto: var(--font-roboto);
+    --font-lobster: var(--font-lobster);
+    --font-great-vibes: var(--font-great-vibes);
+    --font-cinzel: var(--font-cinzel);
+    --font-montserrat: var(--font-montserrat);
+    --font-open-sans: var(--font-open-sans);
+    --font-lato: var(--font-lato);
+    --font-oswald: var(--font-oswald);
+    --font-dancing-script: var(--font-dancing-script);
+    --font-pacifico: var(--font-pacifico);
+    --font-merriweather: var(--font-merriweather);
+    --font-lora: var(--font-lora);
+    --font-poppins: var(--font-poppins);
+    --font-raleway: var(--font-raleway);
+    --font-abril-fatface: var(--font-abril-fatface);
+    --font-permanent-marker: var(--font-permanent-marker);
+    --font-bodoni: var(--font-bodoni);
+    --font-prata: var(--font-prata);
+    --font-cormorant: var(--font-cormorant);
+    --font-dm-serif: var(--font-dm-serif);
+    --font-libre: var(--font-libre);
+    --font-outfit: var(--font-outfit);
+    --font-tenor: var(--font-tenor);
+    --font-space: var(--font-space);
+    --font-dm-sans: var(--font-dm-sans);
+    --font-archivo: var(--font-archivo);
+    --font-syne: var(--font-syne);
+    --font-italiana: var(--font-italiana);
+    --font-julius: var(--font-julius);
+    --font-marcellus: var(--font-marcellus);
+    --font-forum: var(--font-forum);
+    --font-pinyon: var(--font-pinyon);
+    --font-mrs-saint: var(--font-mrs-saint);
+    --font-alex: var(--font-alex);
+    --animate-accordion-down: accordion-down 0.2s ease-out;
+    --animate-accordion-up: accordion-up 0.2s ease-out;
+
+    @keyframes accordion-down {
+        from {
+            height: 0;
+        }
+
+        to {
+            height: var(--radix-accordion-content-height);
+        }
+    }
+
+    @keyframes accordion-up {
+        from {
+            height: var(--radix-accordion-content-height);
+        }
+
+        to {
+            height: 0;
+        }
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+/* Custom Scrollbar for ToolPanel */
+/* Custom Scrollbar for ToolPanel */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    opacity: 0.5;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--foreground);
+    opacity: 1;
+}
+
+/* Hide horizontal scrollbar but allow scrolling */
+.no-horizontal-scrollbar {
+    overflow-x: auto;
+    /* Allow scrolling */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+}
+
+.no-horizontal-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+    width: 0;
+    height: 0;
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-manrope), sans-serif;
+    height: 100%;
+    overscroll-behavior: none;
+    /* Removed overflow: hidden - Lenis handles smooth scrolling without it */
+    /* Removed transition-colors to allow view-transition to take over */
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+}
+
+/*
+  We will set custom properties via JS on the ::view-transition-new(root)
+  to control the clip-path center and radius.
+  If those vars aren't set, it defaults to center.
+*/
+::view-transition-new(root) {
+    /* The filter gives it the wavy/organic/burning edge */
+    filter: url(#wavy);
+}
+
+/* Custom Scrollbar for Avant-Garde look (Global) */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--foreground);
+    opacity: 1;
+}

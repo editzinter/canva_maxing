@@ -1,0 +1,377 @@
+{
+    "version": "3.0",
+    "id": "cotton-candy",
+    "name": "Cotton Candy Cafe",
+    "meta": {
+        "category": "Cafe",
+        "orientation": "portrait"
+    },
+    "tokens": {
+        "colors": {
+            "primary": "#5e3a48",
+            "secondary": "#8b6a7a",
+            "accent": "#ff8da1",
+            "background": "#ffeaf2",
+            "muted": "#ffd6e5"
+        },
+        "fonts": {
+            "heading": "Pacifico",
+            "body": "Quicksand"
+        }
+    },
+    "components": {
+        "pageTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 52,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.accent",
+                "textAlign": "center"
+            }
+        },
+        "subtitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 14,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "textAlign": "center"
+            }
+        },
+        "sectionTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 32,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.accent",
+                "textAlign": "center"
+            }
+        },
+        "menuItem": {
+            "type": "text",
+            "props": {
+                "fontSize": 16,
+                "fontFamily": "$fonts.body",
+                "fontWeight": "bold",
+                "color": "$colors.primary",
+                "textAlign": "center"
+            }
+        },
+        "description": {
+            "type": "text",
+            "props": {
+                "fontSize": 12,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "textAlign": "center",
+                "lineHeight": 1.4
+            }
+        },
+        "divider": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.accent",
+                "height": 2
+            }
+        },
+        "thinDivider": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.muted",
+                "height": 1
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "cover",
+            "background": "$colors.background",
+            "layout": "centered",
+            "padding": 50,
+            "gap": 16,
+            "children": [
+                {
+                    "use": "pageTitle",
+                    "props": {
+                        "content": "Cotton Candy"
+                    }
+                },
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "CAFE",
+                        "fontSize": 24,
+                        "fontFamily": "$fonts.body",
+                        "fontWeight": "bold",
+                        "color": "$colors.primary",
+                        "textAlign": "center",
+                        "charSpacing": 400
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "use": "subtitle",
+                    "props": {
+                        "content": "Sweet Treats & Dreamy Drinks"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "drinks",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 16,
+            "children": [
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "Sweet Drinks"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Pink Lemonade — $5"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Fresh squeezed with rose water & edible flowers"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Strawberry Milkshake — $7"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Creamy vanilla ice cream with fresh strawberries"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Unicorn Frappé — $8"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Cotton candy, vanilla, rainbow sprinkles, whipped cream"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Rose Latte — $6"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Espresso with rose syrup and oat milk"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 10
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "Hot Drinks"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "columns",
+                    "gap": 20,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Hot Cocoa — $5"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Chai Latte — $5"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Matcha — $6"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Earl Grey — $4"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "treats",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 16,
+            "children": [
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "Sweet Treats"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Macarons (6pc) — $12"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Rose, lavender, strawberry, vanilla, chocolate, pistachio"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Cotton Candy Cupcake — $6"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Vanilla sponge, cotton candy frosting, sprinkles"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Strawberry Cheesecake — $8"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "New York style with fresh strawberry compote"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Rainbow Cake Slice — $7"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Six colorful layers with cream cheese frosting"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 20
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "✨ All items made fresh daily ✨\nAsk about our custom party orders!",
+                        "fontSize": 12,
+                        "fontFamily": "$fonts.body",
+                        "color": "$colors.secondary",
+                        "textAlign": "center"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,439 @@
+{
+    "id": "modern-plate",
+    "name": "The Modern Plate",
+    "version": "1.0",
+    "meta": {
+        "category": "Restaurant",
+        "orientation": "portrait",
+        "thumbnail": "/assets/templates/modern-plate.png"
+    },
+    "style": {
+        "background": "#f4f1ea",
+        "fonts": {
+            "heading": "Bebas Neue",
+            "body": "Manrope"
+        },
+        "colors": {
+            "primary": "#1a1a1a",
+            "secondary": "#1a1a1a",
+            "accent": "#1a1a1a"
+        }
+    },
+    "pages": [
+        {
+            "id": "menu",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "THE MODERN PLATE",
+                    "position": {
+                        "x": "center",
+                        "y": 60,
+                        "width": 500
+                    },
+                    "fontSize": 48,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": "center",
+                        "y": 120,
+                        "width": 200,
+                        "height": 2
+                    },
+                    "fill": "#1a1a1a"
+                },
+                {
+                    "type": "text",
+                    "content": "STARTERS",
+                    "position": {
+                        "x": "center",
+                        "y": 160,
+                        "width": 300
+                    },
+                    "fontSize": 32,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "SALMON NAVIALES\nBegin treasured from gorn sauce",
+                    "position": {
+                        "x": "center",
+                        "y": 210,
+                        "width": 400
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "lineHeight": 1.4
+                },
+                {
+                    "type": "text",
+                    "content": "CHICKEN BEA FRIED\nBreat your instancy oour with hornot sauce",
+                    "position": {
+                        "x": "center",
+                        "y": 270,
+                        "width": 400
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "lineHeight": 1.4
+                },
+                {
+                    "type": "text",
+                    "content": "SPANISH SALAD\nServed with tomato-saas and lemon",
+                    "position": {
+                        "x": "center",
+                        "y": 330,
+                        "width": 400
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "lineHeight": 1.4
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 0,
+                        "y": 400,
+                        "width": 595,
+                        "height": 180
+                    },
+                    "fill": "#1a1a1a"
+                },
+                {
+                    "type": "text",
+                    "content": "MAINS",
+                    "position": {
+                        "x": "center",
+                        "y": 420,
+                        "width": 300
+                    },
+                    "fontSize": 32,
+                    "fontFamily": "heading",
+                    "color": "#ffffff",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "CHICKEN SRONISIZED\nGomed made with chocolate crucrebio nonos and salt.",
+                    "position": {
+                        "x": "center",
+                        "y": 470,
+                        "width": 400
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "#ffffff",
+                    "textAlign": "center",
+                    "lineHeight": 1.4
+                },
+                {
+                    "type": "text",
+                    "content": "CHICKEN MAINS\nGomed spit tanmovn with a meathoom xelto green, bacon and salt",
+                    "position": {
+                        "x": "center",
+                        "y": 520,
+                        "width": 400
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "#ffffff",
+                    "textAlign": "center",
+                    "lineHeight": 1.4
+                },
+                {
+                    "type": "text",
+                    "content": "DESSERTS",
+                    "position": {
+                        "x": "center",
+                        "y": 610,
+                        "width": 300
+                    },
+                    "fontSize": 32,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "DESSERT CHEESY\nTonnied with spory vogucra, s tcommade",
+                    "position": {
+                        "x": "center",
+                        "y": 660,
+                        "width": 400
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "lineHeight": 1.4
+                },
+                {
+                    "type": "text",
+                    "content": "BAKERY SALADE\nTom pareraurmand with pasta cheese sauce",
+                    "position": {
+                        "x": "center",
+                        "y": 720,
+                        "width": 400
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "lineHeight": 1.4
+                }
+            ]
+        },
+        {
+            "id": "story",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "OUR PHILOSOPHY",
+                    "position": {
+                        "x": "center",
+                        "y": 80,
+                        "width": 400
+                    },
+                    "fontSize": 48,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "EST. 2024",
+                    "position": {
+                        "x": "center",
+                        "y": 140,
+                        "width": 200
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "charSpacing": 200
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": "center",
+                        "y": 180,
+                        "width": 150,
+                        "height": 2
+                    },
+                    "fill": "#1a1a1a"
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg",
+                    "position": {
+                        "x": "center",
+                        "y": 330,
+                        "width": 400,
+                        "height": 220
+                    },
+                    "clipShape": "rounded",
+                    "clipRadius": 10,
+                    "fit": "cover"
+                },
+                {
+                    "type": "text",
+                    "content": "The Modern Plate was born from a desire to strip away the unnecessary. We believe that true luxury lies in simplicity. Our ingredients are sourced from local artisans who share our passion for quality. Every dish is a testament to the purity of flavor, composed with the precision of modern art.",
+                    "position": {
+                        "x": "center",
+                        "y": 510,
+                        "width": 450
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "lineHeight": 1.6
+                }
+            ]
+        },
+        {
+            "id": "specials",
+            "background": "#1a1a1a",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "CHEF'S SELECTION",
+                    "position": {
+                        "x": "center",
+                        "y": 80,
+                        "width": 400
+                    },
+                    "fontSize": 48,
+                    "fontFamily": "heading",
+                    "color": "#ffffff",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": "center",
+                        "y": 150,
+                        "width": 150,
+                        "height": 2
+                    },
+                    "fill": "#ffffff"
+                },
+                {
+                    "type": "text",
+                    "content": "WAGYU TARTARE\nHand-cut beef, cured egg yolk, capers.",
+                    "position": {
+                        "x": "center",
+                        "y": 220,
+                        "width": 400
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "color": "#ffffff",
+                    "textAlign": "center",
+                    "lineHeight": 1.5
+                },
+                {
+                    "type": "text",
+                    "content": "$32",
+                    "position": {
+                        "x": "center",
+                        "y": 290,
+                        "width": 100
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "#ffffff",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "LOBSTER RAVIOLI\nSaffron cream, basil oil, lemon zest.",
+                    "position": {
+                        "x": "center",
+                        "y": 380,
+                        "width": 400
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "color": "#ffffff",
+                    "textAlign": "center",
+                    "lineHeight": 1.5
+                },
+                {
+                    "type": "text",
+                    "content": "$45",
+                    "position": {
+                        "x": "center",
+                        "y": 450,
+                        "width": 100
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "#ffffff",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "ROASTED DUCK\nHoney glaze, parsnip puree, fig jus.",
+                    "position": {
+                        "x": "center",
+                        "y": 540,
+                        "width": 400
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "color": "#ffffff",
+                    "textAlign": "center",
+                    "lineHeight": 1.5
+                },
+                {
+                    "type": "text",
+                    "content": "$38",
+                    "position": {
+                        "x": "center",
+                        "y": 610,
+                        "width": 100
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "#ffffff",
+                    "textAlign": "center"
+                }
+            ]
+        },
+        {
+            "id": "contact",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "RESERVATIONS",
+                    "position": {
+                        "x": "center",
+                        "y": 200,
+                        "width": 400
+                    },
+                    "fontSize": 60,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "EXPERIENCE THE MODERN.",
+                    "position": {
+                        "x": "center",
+                        "y": 280,
+                        "width": 400
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "charSpacing": 200
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": "center",
+                        "y": 320,
+                        "width": 200,
+                        "height": 2
+                    },
+                    "fill": "#1a1a1a"
+                },
+                {
+                    "type": "text",
+                    "content": "+1 (555) 000-8888\nreserve@modernplate.com\n88 Culinary District, New York, NY",
+                    "position": {
+                        "x": "center",
+                        "y": 380,
+                        "width": 400
+                    },
+                    "fontSize": 16,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "lineHeight": 1.6
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,419 @@
+{
+    "version": "3.0",
+    "id": "chalkboard-cafe",
+    "name": "Chalkboard Cafe",
+    "meta": {
+        "category": "Cafe",
+        "orientation": "portrait"
+    },
+    "tokens": {
+        "colors": {
+            "primary": "#f5f5dc",
+            "secondary": "#b8b8a8",
+            "accent": "#ffffff",
+            "background": "#1e1e1e",
+            "muted": "#3a3a3a"
+        },
+        "fonts": {
+            "heading": "Fredericka the Great",
+            "body": "Manrope"
+        }
+    },
+    "components": {
+        "pageTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 48,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.primary",
+                "textAlign": "center"
+            }
+        },
+        "subtitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 14,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "textAlign": "center",
+                "charSpacing": 100
+            }
+        },
+        "sectionTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 28,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.accent",
+                "textAlign": "center"
+            }
+        },
+        "menuItem": {
+            "type": "text",
+            "props": {
+                "fontSize": 15,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.primary"
+            }
+        },
+        "description": {
+            "type": "text",
+            "props": {
+                "fontSize": 11,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "lineHeight": 1.4
+            }
+        },
+        "divider": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.secondary",
+                "height": 1
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "cover",
+            "background": "$colors.background",
+            "layout": "centered",
+            "padding": 50,
+            "gap": 18,
+            "children": [
+                {
+                    "use": "pageTitle",
+                    "props": {
+                        "content": "Chalkboard"
+                    }
+                },
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "CAFE",
+                        "fontSize": 24,
+                        "fontFamily": "$fonts.body",
+                        "fontWeight": "bold",
+                        "color": "$colors.accent",
+                        "textAlign": "center",
+                        "charSpacing": 400
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "use": "subtitle",
+                    "props": {
+                        "content": "Fresh Brews & Artisan Bites"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "coffee",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 16,
+            "children": [
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "Coffee"
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "layout": "columns",
+                    "gap": 24,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Espresso — $3"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Americano — $4"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Cappuccino — $5"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Latte — $5"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Mocha — $6"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Flat White — $5"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Cold Brew — $5"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Iced Latte — $6"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 10
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "Tea & More"
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "layout": "columns",
+                    "gap": 24,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "English Breakfast — $4"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Earl Grey — $4"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Chai Latte — $5"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Matcha Latte — $6"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Hot Chocolate — $5"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Turmeric Latte — $6"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "food",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 16,
+            "children": [
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "Pastries"
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "layout": "columns",
+                    "gap": 24,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Croissant — $4"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Pain au Chocolat — $5"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Cinnamon Roll — $5"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Muffin — $4"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Scone — $4"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Brownie — $5"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 10
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "Sandwiches"
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Avocado Toast — $10"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Sourdough, smashed avocado, cherry tomatoes, microgreens"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Ham & Cheese — $9"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Smoked ham, gruyère, mustard, ciabatta"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Veggie Wrap — $8"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Hummus, roasted vegetables, feta, spinach"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 20
+                },
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "Prices exclude tax.\nFree WiFi: ChalkboardGuest",
+                        "fontSize": 11,
+                        "fontFamily": "$fonts.body",
+                        "color": "$colors.secondary",
+                        "textAlign": "center"
+                    }
+                }
+            ]
+        }
+    ]
+}

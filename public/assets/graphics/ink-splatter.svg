@@ -1,0 +1,18 @@
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Main mass -->
+<path d="M300 150Q350 100 400 150T450 250T400 350T300 450T200 350T150 250T200 150T300 150" fill="#d1d5db"/>
+<!-- Rough edges -->
+<circle cx="200" cy="200" r="20" fill="#d1d5db"/>
+<circle cx="400" cy="200" r="30" fill="#d1d5db"/>
+<circle cx="300" cy="400" r="25" fill="#d1d5db"/>
+<circle cx="250" cy="300" r="50" fill="#d1d5db"/>
+<circle cx="350" cy="250" r="60" fill="#d1d5db"/>
+<!-- Drips -->
+<path d="M350 400 Q360 500 355 580" stroke="#d1d5db" stroke-width="15" stroke-linecap="round"/>
+<path d="M300 420 Q290 520 295 550" stroke="#d1d5db" stroke-width="10" stroke-linecap="round"/>
+<!-- Spray noise -->
+<g fill="#d1d5db">
+<circle cx="150" cy="150" r="5"/><circle cx="450" cy="150" r="4"/><circle cx="150" cy="450" r="6"/><circle cx="450" cy="450" r="5"/>
+<circle cx="120" cy="300" r="8"/><circle cx="480" cy="300" r="7"/><circle cx="300" cy="100" r="6"/><circle cx="300" cy="500" r="8"/>
+</g>
+</svg>

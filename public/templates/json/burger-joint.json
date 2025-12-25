@@ -1,0 +1,618 @@
+{
+    "version": "3.0",
+    "id": "burger-joint",
+    "name": "Food Menu",
+    "description": "Dark elegant food menu with circular images and yellow accents.",
+    "tags": [
+        "Menu",
+        "Restaurant",
+        "Dark",
+        "Modern"
+    ],
+    "tokens": {
+        "colors": {
+            "background": "#1a1a1a",
+            "text": "#ffffff",
+            "muted": "#b3b3b3",
+            "accent": "#e5a700",
+            "accentDark": "#c49000",
+            "cardBg": "#242424",
+            "border": "#3a3a3a"
+        },
+        "fonts": {
+            "title": "Anton",
+            "body": "Inter"
+        }
+    },
+    "pages": [
+        {
+            "id": "page-1",
+            "background": "$colors.background",
+            "layout": "columns",
+            "columnWidths": [
+                1,
+                1
+            ],
+            "width": 595,
+            "height": 842,
+            "gap": 0,
+            "children": [
+                {
+                    "layout": "stack",
+                    "padding": {
+                        "top": 50,
+                        "left": 40,
+                        "right": 20,
+                        "bottom": 50
+                    },
+                    "gap": 25,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 5,
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "FOOD",
+                                        "fontFamily": "$fonts.title",
+                                        "fontSize": 72,
+                                        "color": "$colors.text",
+                                        "fontWeight": "bold"
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "MENU",
+                                        "fontFamily": "$fonts.title",
+                                        "fontSize": 72,
+                                        "color": "$colors.text",
+                                        "fontWeight": "bold"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "props": {
+                                "content": "Get a 30% discount voucher\non the website.",
+                                "fontFamily": "$fonts.body",
+                                "fontSize": 14,
+                                "color": "$colors.muted",
+                                "lineHeight": 1.5
+                            }
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "layout": "row",
+                                    "children": [
+                                        {
+                                            "type": "shape",
+                                            "props": {
+                                                "shape": "rect",
+                                                "fill": "$colors.accent",
+                                                "width": 140,
+                                                "height": 28,
+                                                "rx": 4
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "MAIN COURSE",
+                                        "fontFamily": "$fonts.body",
+                                        "fontSize": 13,
+                                        "fontWeight": "bold",
+                                        "color": "#1a1a1a",
+                                        "charSpacing": 50
+                                    },
+                                    "top": -26,
+                                    "left": 12
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 8,
+                            "children": [
+                                {
+                                    "layout": "row",
+                                    "justify": "between",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Cheeseburger",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 15,
+                                                "color": "$colors.text"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "$34",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 15,
+                                                "fontWeight": "bold",
+                                                "color": "$colors.accent"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "layout": "row",
+                                    "justify": "between",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Cheese Sandwich",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 15,
+                                                "color": "$colors.text"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "$22",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 15,
+                                                "fontWeight": "bold",
+                                                "color": "$colors.accent"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "layout": "row",
+                                    "justify": "between",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Chicken Burgers",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 15,
+                                                "color": "$colors.text"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "$24",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 15,
+                                                "fontWeight": "bold",
+                                                "color": "$colors.accent"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "layout": "row",
+                                    "justify": "between",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Spicy Chicken",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 15,
+                                                "color": "$colors.text"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "$33",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 15,
+                                                "fontWeight": "bold",
+                                                "color": "$colors.accent"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "layout": "row",
+                                    "justify": "between",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Hot Dog",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 15,
+                                                "color": "$colors.text"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "$23",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 15,
+                                                "fontWeight": "bold",
+                                                "color": "$colors.accent"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "padding": {
+                        "top": 50,
+                        "left": 20,
+                        "right": 40,
+                        "bottom": 50
+                    },
+                    "gap": 20,
+                    "children": [
+                        {
+                            "type": "image",
+                            "props": {
+                                "src": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=300&q=80",
+                                "shape": "circle",
+                                "width": 180,
+                                "height": 180,
+                                "strokeWidth": 3,
+                                "stroke": "#ffffff"
+                            }
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "layout": "row",
+                                    "children": [
+                                        {
+                                            "type": "shape",
+                                            "props": {
+                                                "shape": "rect",
+                                                "fill": "$colors.accent",
+                                                "width": 120,
+                                                "height": 24,
+                                                "rx": 4
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "APPETIZERS",
+                                        "fontFamily": "$fonts.body",
+                                        "fontSize": 11,
+                                        "fontWeight": "bold",
+                                        "color": "#1a1a1a",
+                                        "charSpacing": 50
+                                    },
+                                    "top": -22,
+                                    "left": 12
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 6,
+                            "children": [
+                                {
+                                    "layout": "row",
+                                    "justify": "between",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Fruit Salad",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "color": "$colors.text"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "$13",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "fontWeight": "bold",
+                                                "color": "$colors.accent"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "layout": "row",
+                                    "justify": "between",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Cocktails",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "color": "$colors.text"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "$12",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "fontWeight": "bold",
+                                                "color": "$colors.accent"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "layout": "row",
+                                    "justify": "between",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Nuggets",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "color": "$colors.text"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "$14",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "fontWeight": "bold",
+                                                "color": "$colors.accent"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "layout": "row",
+                                    "justify": "between",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "French Fries",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "color": "$colors.text"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "$15",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "fontWeight": "bold",
+                                                "color": "$colors.accent"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "layout": "row",
+                                    "children": [
+                                        {
+                                            "type": "shape",
+                                            "props": {
+                                                "shape": "rect",
+                                                "fill": "$colors.accent",
+                                                "width": 100,
+                                                "height": 24,
+                                                "rx": 4
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "BEVERAGE",
+                                        "fontFamily": "$fonts.body",
+                                        "fontSize": 11,
+                                        "fontWeight": "bold",
+                                        "color": "#1a1a1a",
+                                        "charSpacing": 50
+                                    },
+                                    "top": -22,
+                                    "left": 12
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 6,
+                            "children": [
+                                {
+                                    "layout": "row",
+                                    "justify": "between",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Milk Shake",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "color": "$colors.text"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "$34",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "fontWeight": "bold",
+                                                "color": "$colors.accent"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "layout": "row",
+                                    "justify": "between",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Iced Tea",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "color": "$colors.text"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "$22",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "fontWeight": "bold",
+                                                "color": "$colors.accent"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "layout": "row",
+                                    "justify": "between",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Orange Juice",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "color": "$colors.text"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "$24",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "fontWeight": "bold",
+                                                "color": "$colors.accent"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "layout": "row",
+                                    "justify": "between",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Iced Coffee",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "color": "$colors.text"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "$23",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "fontWeight": "bold",
+                                                "color": "$colors.accent"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "spacer",
+                            "height": 15
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "MORE INFORMATION",
+                                        "fontFamily": "$fonts.body",
+                                        "fontSize": 12,
+                                        "fontWeight": "bold",
+                                        "color": "$colors.text",
+                                        "charSpacing": 50
+                                    }
+                                },
+                                {
+                                    "layout": "stack",
+                                    "props": {
+                                        "fill": "$colors.cardBg",
+                                        "cornerRadius": 8
+                                    },
+                                    "padding": 15,
+                                    "gap": 8,
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "📞 123-456-7890",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 12,
+                                                "color": "$colors.muted"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "🌐 www.burgerjoint.com",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 12,
+                                                "color": "$colors.muted"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "📍 123 Food Street, Flavor City",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 12,
+                                                "color": "$colors.muted"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,443 @@
+{
+    "version": "3.0",
+    "id": "daily-grind",
+    "name": "Daily Grind",
+    "meta": {
+        "category": "Cafe",
+        "orientation": "portrait"
+    },
+    "tokens": {
+        "colors": {
+            "primary": "#ffffff",
+            "secondary": "#a1a1aa",
+            "accent": "#facc15",
+            "background": "#18181b",
+            "muted": "#333333"
+        },
+        "fonts": {
+            "heading": "Bebas Neue",
+            "body": "Manrope"
+        }
+    },
+    "components": {
+        "pageTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 56,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.primary",
+                "textAlign": "center"
+            }
+        },
+        "subtitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 12,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "textAlign": "center",
+                "charSpacing": 150
+            }
+        },
+        "sectionTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 28,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.accent"
+            }
+        },
+        "menuItem": {
+            "type": "text",
+            "props": {
+                "fontSize": 15,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.primary"
+            }
+        },
+        "description": {
+            "type": "text",
+            "props": {
+                "fontSize": 11,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "lineHeight": 1.4
+            }
+        },
+        "divider": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.accent",
+                "height": 2
+            }
+        },
+        "thinDivider": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.muted",
+                "height": 1
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "cover",
+            "background": "$colors.background",
+            "layout": "centered",
+            "padding": 60,
+            "gap": 16,
+            "children": [
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "THE DAILY",
+                        "fontSize": 42,
+                        "fontFamily": "$fonts.heading",
+                        "color": "$colors.accent",
+                        "textAlign": "center"
+                    }
+                },
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "GRIND",
+                        "fontSize": 72,
+                        "fontFamily": "$fonts.heading",
+                        "color": "$colors.primary",
+                        "textAlign": "center"
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "use": "subtitle",
+                    "props": {
+                        "content": "SPECIALTY COFFEE & PASTRIES"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "coffee",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 18,
+            "children": [
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "COFFEE"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "columns",
+                    "gap": 24,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Espresso — $3"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Americano — $4"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Cappuccino — $5"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Latte — $5"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Flat White — $5"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Mocha — $6"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Macchiato — $4"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Cold Brew — $5"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Iced Latte — $6"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Pour Over — $5"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 10
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "SPECIALTY DRINKS"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Honey Lavender Latte — $7"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "House-made lavender syrup, local honey, oat milk"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Brown Sugar Shaken Espresso — $6"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Double shot, brown sugar, oat milk, cinnamon"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Matcha Latte — $6"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Ceremonial grade matcha, choice of milk"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "food",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 18,
+            "children": [
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "PASTRIES"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "columns",
+                    "gap": 24,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Croissant — $4"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Almond Croissant — $5"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Pain au Chocolat — $5"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Blueberry Muffin — $4"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Banana Bread — $4"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Scone — $4"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 10
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "BREAKFAST"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Avocado Toast — $12"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Sourdough, smashed avocado, poached eggs, chili flakes"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Breakfast Sandwich — $10"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Bacon, egg, cheese, brioche bun"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Açaí Bowl — $14"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Açaí, granola, banana, berries, coconut, honey"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 20
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "☕ Ask about our single-origin beans\nFree WiFi: DailyGrind2024",
+                        "fontSize": 11,
+                        "fontFamily": "$fonts.body",
+                        "color": "$colors.secondary",
+                        "textAlign": "center"
+                    }
+                }
+            ]
+        }
+    ]
+}

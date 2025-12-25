@@ -1,0 +1,544 @@
+{
+    "id": "midnight-bistro",
+    "name": "Midnight Bistro",
+    "version": "1.0",
+    "meta": {
+        "category": "Restaurant",
+        "orientation": "portrait",
+        "thumbnail": "/assets/templates/midnight-bistro.png"
+    },
+    "style": {
+        "background": "#1a1a1a",
+        "fonts": {
+            "heading": "Bebas Neue",
+            "body": "Manrope"
+        },
+        "colors": {
+            "primary": "#ffffff",
+            "secondary": "#e5e5e5",
+            "accent": "#fb8c00"
+        }
+    },
+    "pages": [
+        {
+            "id": "cover",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "MIDNIGHT\nBISTRO",
+                    "position": {
+                        "x": "center",
+                        "y": 250,
+                        "width": 500
+                    },
+                    "fontSize": 80,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "lineHeight": 0.9
+                },
+                {
+                    "type": "text",
+                    "content": "EST. 2024",
+                    "position": {
+                        "x": "center",
+                        "y": 150,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "accent",
+                    "textAlign": "center",
+                    "charSpacing": 300
+                },
+                {
+                    "type": "text",
+                    "content": "MODERN DINING EXPERIENCE",
+                    "position": {
+                        "x": "center",
+                        "y": 692,
+                        "width": 400
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "textAlign": "center",
+                    "charSpacing": 400
+                }
+            ]
+        },
+        {
+            "id": "food-menu",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "FOOD MENU",
+                    "position": {
+                        "x": "center",
+                        "y": 40,
+                        "width": 500
+                    },
+                    "fontSize": 70,
+                    "fontFamily": "heading",
+                    "fontWeight": "bold",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "FRADEL AND SPIES RESTAURANT",
+                    "position": {
+                        "x": "center",
+                        "y": 120,
+                        "width": 400
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "charSpacing": 100
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": "center",
+                        "y": 150,
+                        "width": 300,
+                        "height": 2
+                    },
+                    "fill": "#e5e5e5",
+                    "opacity": 0.3
+                },
+                {
+                    "type": "menuSection",
+                    "title": "MAIN DISHES",
+                    "position": {
+                        "x": 47,
+                        "y": 175,
+                        "width": 250
+                    },
+                    "showPriceBubble": false,
+                    "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg",
+                    "items": [
+                        {
+                            "name": "Chicken Sandwich",
+                            "price": "5.00"
+                        },
+                        {
+                            "name": "Cheeseburger",
+                            "price": "6.50"
+                        },
+                        {
+                            "name": "Fried Rice",
+                            "price": "4.50"
+                        },
+                        {
+                            "name": "Spaghetti Bolognese",
+                            "price": "6.00"
+                        },
+                        {
+                            "name": "Grilled Chicken",
+                            "price": "6.80"
+                        }
+                    ]
+                },
+                {
+                    "type": "menuSection",
+                    "title": "DESSERTS",
+                    "position": {
+                        "x": 47,
+                        "y": 480,
+                        "width": 250
+                    },
+                    "showPriceBubble": false,
+                    "image": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg",
+                    "items": [
+                        {
+                            "name": "Chocolate Cake",
+                            "price": "3.00"
+                        },
+                        {
+                            "name": "Ice Cream",
+                            "price": "2.50"
+                        },
+                        {
+                            "name": "Fruit Salad",
+                            "price": "2.80"
+                        },
+                        {
+                            "name": "Cheesecake",
+                            "price": "4.00"
+                        }
+                    ]
+                },
+                {
+                    "type": "menuSection",
+                    "title": "SNACKS",
+                    "position": {
+                        "x": 310,
+                        "y": 175,
+                        "width": 250
+                    },
+                    "showPriceBubble": false,
+                    "image": "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg",
+                    "items": [
+                        {
+                            "name": "French Fries",
+                            "price": "2.50"
+                        },
+                        {
+                            "name": "Chicken Nuggets",
+                            "price": "3.50"
+                        },
+                        {
+                            "name": "Spring Rolls",
+                            "price": "2.80"
+                        },
+                        {
+                            "name": "Mini Sausages",
+                            "price": "3.20"
+                        },
+                        {
+                            "name": "Fried Tofu Bites",
+                            "price": "2.00"
+                        }
+                    ]
+                },
+                {
+                    "type": "menuSection",
+                    "title": "DRINKS",
+                    "position": {
+                        "x": 310,
+                        "y": 480,
+                        "width": 250
+                    },
+                    "showPriceBubble": false,
+                    "image": "https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg",
+                    "items": [
+                        {
+                            "name": "Mineral Water",
+                            "price": "1.00"
+                        },
+                        {
+                            "name": "Iced Tea",
+                            "price": "1.50"
+                        },
+                        {
+                            "name": "Orange Juice",
+                            "price": "2.00"
+                        },
+                        {
+                            "name": "Hot Coffee",
+                            "price": "2.20"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "Further information:       +123-456-7890       123 Anywhere St., Any City",
+                    "position": {
+                        "x": "center",
+                        "y": 800,
+                        "width": 500
+                    },
+                    "fontSize": 11,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "textAlign": "center"
+                }
+            ]
+        },
+        {
+            "id": "cocktails",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "SIGNATURE COCKTAILS",
+                    "position": {
+                        "x": "center",
+                        "y": 50,
+                        "width": 500
+                    },
+                    "fontSize": 60,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/11271167/pexels-photo-11271167.jpeg",
+                    "position": {
+                        "x": 50,
+                        "y": 140,
+                        "width": 80,
+                        "height": 80
+                    },
+                    "clipShape": "circle",
+                    "fit": "cover"
+                },
+                {
+                    "type": "text",
+                    "content": "MIDNIGHT SOUR",
+                    "position": {
+                        "x": 150,
+                        "y": 140,
+                        "width": 300
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$16",
+                    "position": {
+                        "x": 520,
+                        "y": 140
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Bourbon, blackberry syrup, lemon juice, egg white.",
+                    "position": {
+                        "x": 150,
+                        "y": 175,
+                        "width": 350
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/1484678/pexels-photo-1484678.jpeg",
+                    "position": {
+                        "x": 50,
+                        "y": 260,
+                        "width": 80,
+                        "height": 80
+                    },
+                    "clipShape": "circle",
+                    "fit": "cover"
+                },
+                {
+                    "type": "text",
+                    "content": "SMOKED OLD FASHIONED",
+                    "position": {
+                        "x": 150,
+                        "y": 260,
+                        "width": 300
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$18",
+                    "position": {
+                        "x": 520,
+                        "y": 260
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Rye whiskey, maple syrup, angostura bitters, smoke.",
+                    "position": {
+                        "x": 150,
+                        "y": 295,
+                        "width": 350
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg",
+                    "position": {
+                        "x": 50,
+                        "y": 380,
+                        "width": 80,
+                        "height": 80
+                    },
+                    "clipShape": "circle",
+                    "fit": "cover"
+                },
+                {
+                    "type": "text",
+                    "content": "LYCHEE MARTINI",
+                    "position": {
+                        "x": 150,
+                        "y": 380,
+                        "width": 300
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$15",
+                    "position": {
+                        "x": 520,
+                        "y": 380
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Vodka, lychee liqueur, fresh lime juice.",
+                    "position": {
+                        "x": 150,
+                        "y": 415,
+                        "width": 350
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/16301323/pexels-photo-16301323.jpeg",
+                    "position": {
+                        "x": 50,
+                        "y": 500,
+                        "width": 80,
+                        "height": 80
+                    },
+                    "clipShape": "circle",
+                    "fit": "cover"
+                },
+                {
+                    "type": "text",
+                    "content": "SPICY MARGARITA",
+                    "position": {
+                        "x": 150,
+                        "y": 500,
+                        "width": 300
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$16",
+                    "position": {
+                        "x": 520,
+                        "y": 500
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Tequila, jalapeño, lime, agave syrup, tajin rim.",
+                    "position": {
+                        "x": 150,
+                        "y": 535,
+                        "width": 350
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/1304540/pexels-photo-1304540.jpeg",
+                    "position": {
+                        "x": 50,
+                        "y": 620,
+                        "width": 80,
+                        "height": 80
+                    },
+                    "clipShape": "circle",
+                    "fit": "cover"
+                },
+                {
+                    "type": "text",
+                    "content": "ESPRESSO MARTINI",
+                    "position": {
+                        "x": 150,
+                        "y": 620,
+                        "width": 300
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$17",
+                    "position": {
+                        "x": 520,
+                        "y": 620
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Vodka, kahlua, fresh espresso, coffee beans.",
+                    "position": {
+                        "x": 150,
+                        "y": 655,
+                        "width": 350
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                }
+            ]
+        },
+        {
+            "id": "info",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "RESERVATIONS",
+                    "position": {
+                        "x": "center",
+                        "y": 300
+                    },
+                    "fontSize": 60,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "Book your table online or call us.\n+123-456-7890\ninfo@midnightbistro.com",
+                    "position": {
+                        "x": "center",
+                        "y": 400,
+                        "width": 400
+                    },
+                    "fontSize": 16,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "textAlign": "center",
+                    "lineHeight": 1.5
+                }
+            ]
+        }
+    ]
+}

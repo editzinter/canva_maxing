@@ -1,0 +1,500 @@
+{
+    "version": "3.0",
+    "id": "dark-modern",
+    "name": "Dark Modern",
+    "meta": {
+        "category": "Restaurant",
+        "orientation": "portrait"
+    },
+    "tokens": {
+        "colors": {
+            "primary": "#ffffff",
+            "secondary": "#a1a1aa",
+            "accent": "#22c55e",
+            "background": "#0a0a0a",
+            "muted": "#27272a"
+        },
+        "fonts": {
+            "heading": "Bebas Neue",
+            "body": "Manrope"
+        }
+    },
+    "components": {
+        "pageTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 56,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.primary",
+                "textAlign": "center"
+            }
+        },
+        "subtitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 14,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "textAlign": "center",
+                "charSpacing": 200
+            }
+        },
+        "sectionTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 24,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.accent"
+            }
+        },
+        "menuItem": {
+            "type": "text",
+            "props": {
+                "fontSize": 14,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.primary",
+                "lineHeight": 1.5
+            }
+        },
+        "price": {
+            "type": "text",
+            "props": {
+                "fontSize": 14,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.accent",
+                "fontWeight": "bold"
+            }
+        },
+        "description": {
+            "type": "text",
+            "props": {
+                "fontSize": 12,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "lineHeight": 1.4
+            }
+        },
+        "divider": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.muted",
+                "height": 1
+            }
+        },
+        "accentBar": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.accent",
+                "height": 3,
+                "width": 60
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "cover",
+            "background": "$colors.background",
+            "layout": "centered",
+            "padding": 60,
+            "gap": 20,
+            "children": [
+                {
+                    "use": "subtitle",
+                    "props": {
+                        "content": "ESTABLISHED 2024"
+                    }
+                },
+                {
+                    "use": "pageTitle",
+                    "props": {
+                        "content": "NOIR\nKITCHEN"
+                    }
+                },
+                {
+                    "use": "accentBar"
+                },
+                {
+                    "use": "subtitle",
+                    "props": {
+                        "content": "FINE DINING EXPERIENCE"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "starters",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 20,
+            "children": [
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "STARTERS"
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "layout": "stack",
+                    "gap": 16,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Tuna Tartare — $18"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Fresh ahi tuna, avocado, sesame, citrus ponzu"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 16,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Burrata — $16"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Creamy Italian cheese, heirloom tomatoes, basil oil"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 16,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Wagyu Carpaccio — $24"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Thinly sliced wagyu, truffle aioli, arugula, parmesan"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 16,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Lobster Bisque — $19"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Rich and creamy, cognac, crème fraîche"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 20
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "SALADS"
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "layout": "stack",
+                    "gap": 16,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Caesar — $14"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Romaine, white anchovies, garlic croutons, aged parmesan"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 16,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Arugula & Pear — $16"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Baby arugula, poached pear, gorgonzola, candied walnuts"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mains",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 20,
+            "children": [
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "ENTRÉES"
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "layout": "stack",
+                    "gap": 16,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Prime Ribeye — $58"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "16oz dry-aged, bone marrow butter, roasted garlic"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 16,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Chilean Sea Bass — $48"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Miso-glazed, bok choy, shiitake mushrooms"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 16,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Duck Breast — $42"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Pan-seared, cherry reduction, potato purée"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 16,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Lamb Rack — $52"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Herb-crusted, mint chimichurri, roasted vegetables"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 20
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "SIDES"
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "layout": "columns",
+                    "gap": 30,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 8,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Truffle Fries — $12"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Creamed Spinach — $10"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 8,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Grilled Asparagus — $11"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Mac & Cheese — $14"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "desserts",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 20,
+            "children": [
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "DESSERTS"
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "layout": "stack",
+                    "gap": 16,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Chocolate Fondant — $14"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Warm molten center, vanilla bean ice cream"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 16,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Crème Brûlée — $12"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Classic French custard, caramelized sugar"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 16,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Tiramisu — $13"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Espresso-soaked ladyfingers, mascarpone, cocoa"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 40
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "All prices exclude tax and gratuity.\nPlease inform your server of any dietary restrictions.",
+                        "fontSize": 11,
+                        "fontFamily": "$fonts.body",
+                        "color": "$colors.secondary",
+                        "textAlign": "center"
+                    }
+                }
+            ]
+        }
+    ]
+}

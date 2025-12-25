@@ -1,0 +1,569 @@
+{
+    "id": "dark-modern",
+    "name": "Dark Modern",
+    "version": "1.0",
+    "meta": {
+        "category": "Restaurant",
+        "orientation": "portrait",
+        "thumbnail": "/assets/templates/dark-modern.png"
+    },
+    "style": {
+        "background": "#121212",
+        "fonts": {
+            "heading": "Abril Fatface",
+            "body": "Inter"
+        },
+        "colors": {
+            "primary": "#ffffff",
+            "secondary": "#a1a1aa",
+            "accent": "#4ade80"
+        }
+    },
+    "pages": [
+        {
+            "id": "cover",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Restaurant Menu",
+                    "position": {
+                        "x": 35,
+                        "y": 50,
+                        "width": 280
+                    },
+                    "textStyle": "heading-xl",
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "lineHeight": 0.85
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 35,
+                        "y": 170,
+                        "width": 60,
+                        "height": 4
+                    },
+                    "fill": "accent"
+                },
+                {
+                    "type": "text",
+                    "content": "Fresh • Local • Delicious",
+                    "position": {
+                        "x": 35,
+                        "y": 185
+                    },
+                    "fontSize": 11,
+                    "color": "secondary",
+                    "charSpacing": 100
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 35,
+                        "y": 220,
+                        "width": 215,
+                        "height": 1
+                    },
+                    "fill": "#333333"
+                },
+                {
+                    "type": "menuSection",
+                    "title": "MENU",
+                    "position": {
+                        "x": 35,
+                        "y": 240,
+                        "width": 250
+                    },
+                    "showPriceBubble": true,
+                    "items": [
+                        {
+                            "name": "CHICKEN SANDWICH",
+                            "price": "30"
+                        },
+                        {
+                            "name": "LEMONADE",
+                            "price": "50"
+                        },
+                        {
+                            "name": "STEAK",
+                            "price": "70"
+                        },
+                        {
+                            "name": "CHICKEN ROASTED",
+                            "price": "90"
+                        },
+                        {
+                            "name": "SPAGHETTI",
+                            "price": "30"
+                        },
+                        {
+                            "name": "WAFFLE",
+                            "price": "20"
+                        },
+                        {
+                            "name": "RICE BOWL",
+                            "price": "10"
+                        },
+                        {
+                            "name": "PASTA",
+                            "price": "30"
+                        }
+                    ]
+                },
+                {
+                    "type": "imageStack",
+                    "position": {
+                        "x": 430,
+                        "y": 100
+                    },
+                    "direction": "vertical",
+                    "itemSize": 120,
+                    "spacing": 115,
+                    "clipShape": "circle",
+                    "showBorder": true,
+                    "showAccentRing": true,
+                    "images": [
+                        {
+                            "query": "gourmet burger",
+                            "provider": "pexels"
+                        },
+                        {
+                            "query": "fresh salad",
+                            "provider": "pexels"
+                        },
+                        {
+                            "query": "steak dinner",
+                            "provider": "pexels"
+                        },
+                        {
+                            "query": "pasta dish",
+                            "provider": "pexels"
+                        },
+                        {
+                            "query": "ramen bowl",
+                            "provider": "pexels"
+                        }
+                    ]
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 30,
+                        "y": 772,
+                        "width": 535,
+                        "height": 1
+                    },
+                    "fill": "#333333"
+                },
+                {
+                    "type": "text",
+                    "content": "+123-456-789  •  123 Anywhere st., Any City  •  @reallygreatsite",
+                    "position": {
+                        "x": "center",
+                        "y": 797
+                    },
+                    "fontSize": 10,
+                    "color": "#888888",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "decoration",
+                    "src": "/assets/basil-leaf.svg",
+                    "position": {
+                        "x": 570,
+                        "y": 25,
+                        "originX": "center",
+                        "originY": "center"
+                    },
+                    "scale": 0.7,
+                    "angle": 135,
+                    "opacity": 0.9
+                },
+                {
+                    "type": "decoration",
+                    "src": "/assets/basil-leaf.svg",
+                    "position": {
+                        "x": 25,
+                        "y": 817,
+                        "originX": "center",
+                        "originY": "center"
+                    },
+                    "scale": 0.5,
+                    "angle": -45,
+                    "opacity": 0.7
+                }
+            ]
+        },
+        {
+            "id": "story",
+            "elements": [
+                {
+                    "type": "image",
+                    "src": {
+                        "query": "chef cooking dark",
+                        "provider": "pexels"
+                    },
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 595,
+                        "height": 379
+                    },
+                    "fit": "cover"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": "center",
+                        "y": 404,
+                        "width": 80,
+                        "height": 3
+                    },
+                    "fill": "accent"
+                },
+                {
+                    "type": "text",
+                    "content": "SINCE 1988",
+                    "position": {
+                        "x": "center",
+                        "y": 429
+                    },
+                    "fontSize": 12,
+                    "color": "accent",
+                    "charSpacing": 400,
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "Our Story",
+                    "position": {
+                        "x": "center",
+                        "y": 459
+                    },
+                    "textStyle": "heading-lg",
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "It started with a simple passion for authentic flavors. Our grandmother's recipes, passed down through generations, form the heart of our kitchen. We believe in fresh ingredients, bold spices, and the warmth of shared meals.",
+                    "position": {
+                        "x": 50,
+                        "y": 539,
+                        "width": 495
+                    },
+                    "fontSize": 15,
+                    "color": "#b0b0b0",
+                    "textAlign": "center",
+                    "lineHeight": 1.7
+                },
+                {
+                    "type": "text",
+                    "content": "— Chef Mario",
+                    "position": {
+                        "x": "center",
+                        "y": 689
+                    },
+                    "fontSize": 20,
+                    "fontStyle": "italic",
+                    "color": "accent",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "decoration",
+                    "src": "/assets/basil-leaf.svg",
+                    "position": {
+                        "x": 25,
+                        "y": 25,
+                        "originX": "center",
+                        "originY": "center"
+                    },
+                    "scale": 0.5,
+                    "angle": -30,
+                    "opacity": 0.7
+                },
+                {
+                    "type": "decoration",
+                    "src": "/assets/basil-leaf.svg",
+                    "position": {
+                        "x": 545,
+                        "y": 772,
+                        "originX": "center",
+                        "originY": "center"
+                    },
+                    "scale": 0.7,
+                    "angle": 120,
+                    "opacity": 1
+                }
+            ]
+        },
+        {
+            "id": "menu",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "The Menu",
+                    "position": {
+                        "x": 40,
+                        "y": 40
+                    },
+                    "textStyle": "heading-lg",
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "menuSection",
+                    "title": "STARTERS",
+                    "position": {
+                        "x": 40,
+                        "y": 120,
+                        "width": 155
+                    },
+                    "showPriceBubble": true,
+                    "items": [
+                        {
+                            "name": "Bruschetta",
+                            "price": "12",
+                            "description": "Tomato, basil, garlic"
+                        },
+                        {
+                            "name": "Calamari",
+                            "price": "15",
+                            "description": "Crispy fried squid"
+                        },
+                        {
+                            "name": "Soup of Day",
+                            "price": "10",
+                            "description": "Fresh daily"
+                        },
+                        {
+                            "name": "Caesar Salad",
+                            "price": "14",
+                            "description": "Romaine, croutons"
+                        }
+                    ]
+                },
+                {
+                    "type": "menuSection",
+                    "title": "MAINS",
+                    "position": {
+                        "x": 220,
+                        "y": 120,
+                        "width": 155
+                    },
+                    "showPriceBubble": true,
+                    "items": [
+                        {
+                            "name": "Grilled Salmon",
+                            "price": "28",
+                            "description": "Asparagus, lemon"
+                        },
+                        {
+                            "name": "Ribeye Steak",
+                            "price": "35",
+                            "description": "Mashed potato"
+                        },
+                        {
+                            "name": "Truffle Pasta",
+                            "price": "26",
+                            "description": "Black truffle"
+                        },
+                        {
+                            "name": "Risotto",
+                            "price": "24",
+                            "description": "Mushroom, herbs"
+                        }
+                    ]
+                },
+                {
+                    "type": "menuSection",
+                    "title": "DESSERTS",
+                    "position": {
+                        "x": 400,
+                        "y": 120,
+                        "width": 155
+                    },
+                    "showPriceBubble": true,
+                    "items": [
+                        {
+                            "name": "Tiramisu",
+                            "price": "12",
+                            "description": "Coffee, mascarpone"
+                        },
+                        {
+                            "name": "Cheesecake",
+                            "price": "12",
+                            "description": "Berry compote"
+                        },
+                        {
+                            "name": "Gelato",
+                            "price": "8",
+                            "description": "Three flavors"
+                        }
+                    ]
+                },
+                {
+                    "type": "decoration",
+                    "src": "/assets/basil-leaf.svg",
+                    "position": {
+                        "x": "center",
+                        "y": 792,
+                        "originX": "center",
+                        "originY": "bottom"
+                    },
+                    "scale": 1.2,
+                    "angle": 0,
+                    "opacity": 0.2
+                }
+            ]
+        },
+        {
+            "id": "back-cover",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Reserve A Table",
+                    "position": {
+                        "x": "center",
+                        "y": 80
+                    },
+                    "textStyle": "heading-lg",
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": "center",
+                        "y": 145,
+                        "width": 100,
+                        "height": 3
+                    },
+                    "fill": "accent"
+                },
+                {
+                    "type": "text",
+                    "content": "Experience the finest dining in the city. Book your table today.",
+                    "position": {
+                        "x": 50,
+                        "y": 170,
+                        "width": 495
+                    },
+                    "fontSize": 14,
+                    "color": "#aaaaaa",
+                    "textAlign": "center",
+                    "lineHeight": 1.5
+                },
+                {
+                    "type": "image",
+                    "src": {
+                        "query": "fine dining table dark",
+                        "provider": "pexels"
+                    },
+                    "position": {
+                        "x": "center",
+                        "y": 380
+                    },
+                    "clipShape": "circle",
+                    "fit": "cover",
+                    "border": {
+                        "color": "#ffffff",
+                        "width": 3
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "+123-456-789",
+                    "position": {
+                        "x": "center",
+                        "y": 560
+                    },
+                    "fontSize": 18,
+                    "fontWeight": "bold",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "123 Anywhere st., Any City",
+                    "position": {
+                        "x": "center",
+                        "y": 590
+                    },
+                    "fontSize": 14,
+                    "color": "#888888",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "@reallygreatsite",
+                    "position": {
+                        "x": "center",
+                        "y": 620
+                    },
+                    "fontSize": 16,
+                    "color": "accent",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "Open Daily: 11am - 10pm",
+                    "position": {
+                        "x": "center",
+                        "y": 655
+                    },
+                    "fontSize": 12,
+                    "color": "#666666",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "decoration",
+                    "src": "/assets/basil-leaf.svg",
+                    "position": {
+                        "x": 40,
+                        "y": 50,
+                        "originX": "center",
+                        "originY": "center"
+                    },
+                    "scale": 0.6,
+                    "angle": -45,
+                    "opacity": 0.8
+                },
+                {
+                    "type": "decoration",
+                    "src": "/assets/basil-leaf.svg",
+                    "position": {
+                        "x": 555,
+                        "y": 50,
+                        "originX": "center",
+                        "originY": "center"
+                    },
+                    "scale": 0.6,
+                    "angle": 45,
+                    "opacity": 0.8
+                },
+                {
+                    "type": "decoration",
+                    "src": "/assets/basil-leaf.svg",
+                    "position": {
+                        "x": "center",
+                        "y": 812,
+                        "originX": "center",
+                        "originY": "center"
+                    },
+                    "scale": 0.5,
+                    "angle": 180,
+                    "opacity": 0.5
+                }
+            ]
+        }
+    ]
+}

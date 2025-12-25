@@ -1,0 +1,629 @@
+{
+    "version": "3.0",
+    "id": "midnight-bistro",
+    "name": "Midnight Bistro",
+    "meta": {
+        "category": "Restaurant",
+        "orientation": "portrait"
+    },
+    "tokens": {
+        "colors": {
+            "primary": "#ffffff",
+            "secondary": "#a1a1aa",
+            "accent": "#fb8c00",
+            "background": "#1a1a1a",
+            "muted": "#333333"
+        },
+        "fonts": {
+            "heading": "Bebas Neue",
+            "body": "Manrope"
+        }
+    },
+    "components": {
+        "pageTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 56,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.primary",
+                "textAlign": "center"
+            }
+        },
+        "subtitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 12,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "textAlign": "center",
+                "charSpacing": 200
+            }
+        },
+        "sectionTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 20,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.accent"
+            }
+        },
+        "menuItem": {
+            "type": "text",
+            "props": {
+                "fontSize": 15,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.primary"
+            }
+        },
+        "menuPrice": {
+            "type": "text",
+            "props": {
+                "fontSize": 15,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.accent"
+            }
+        },
+        "description": {
+            "type": "text",
+            "props": {
+                "fontSize": 11,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "lineHeight": 1.4
+            }
+        },
+        "divider": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.muted",
+                "height": 1
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "cover",
+            "background": "$colors.background",
+            "layout": "centered",
+            "padding": 60,
+            "gap": 16,
+            "children": [
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "EST. 2024",
+                        "fontSize": 14,
+                        "fontFamily": "$fonts.body",
+                        "fontWeight": "bold",
+                        "color": "$colors.accent",
+                        "textAlign": "center",
+                        "charSpacing": 300
+                    }
+                },
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "MIDNIGHT\nBISTRO",
+                        "fontSize": 72,
+                        "fontFamily": "$fonts.heading",
+                        "color": "$colors.primary",
+                        "textAlign": "center",
+                        "lineHeight": 0.95
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "use": "subtitle",
+                    "props": {
+                        "content": "MODERN DINING EXPERIENCE"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "food-menu",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 30,
+            "gap": 14,
+            "children": [
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "FOOD MENU",
+                        "fontSize": 64,
+                        "fontFamily": "$fonts.heading",
+                        "color": "$colors.primary",
+                        "textAlign": "center"
+                    }
+                },
+                {
+                    "layout": "row",
+                    "gap": 10,
+                    "children": [
+                        {
+                            "type": "shape",
+                            "props": {
+                                "shape": "rect",
+                                "fill": "$colors.accent",
+                                "height": 2
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "props": {
+                                "content": "FRADEL AND SPIES RESTAURANT",
+                                "fontSize": 11,
+                                "fontFamily": "$fonts.body",
+                                "fontWeight": "bold",
+                                "color": "$colors.primary",
+                                "textAlign": "center",
+                                "charSpacing": 100
+                            }
+                        },
+                        {
+                            "type": "shape",
+                            "props": {
+                                "shape": "rect",
+                                "fill": "$colors.accent",
+                                "height": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 8
+                },
+                {
+                    "layout": "columns",
+                    "gap": 24,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "type": "image",
+                                    "props": {
+                                        "src": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400",
+                                        "width": 230,
+                                        "height": 110,
+                                        "cornerRadius": 10,
+                                        "stroke": "#444444",
+                                        "strokeWidth": 3
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "MAIN DISHES",
+                                        "fontSize": 14,
+                                        "fontFamily": "$fonts.heading",
+                                        "color": "#000000",
+                                        "textAlign": "center",
+                                        "backgroundColor": "$colors.accent"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Chicken Sandwich          $5.00"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Cheeseburger              $6.50"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Fried Rice                $4.50"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Spaghetti Bolognese       $6.00"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Grilled Chicken           $6.80"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "type": "image",
+                                    "props": {
+                                        "src": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400",
+                                        "width": 230,
+                                        "height": 110,
+                                        "cornerRadius": 10,
+                                        "stroke": "#444444",
+                                        "strokeWidth": 3
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "SNACKS",
+                                        "fontSize": 14,
+                                        "fontFamily": "$fonts.heading",
+                                        "color": "#000000",
+                                        "textAlign": "center",
+                                        "backgroundColor": "$colors.accent"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "French Fries              $2.50"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Chicken Nuggets           $3.50"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Spring Rolls              $2.80"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Mini Sausages             $3.20"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Fried Tofu Bites          $2.00"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 8
+                },
+                {
+                    "layout": "columns",
+                    "gap": 24,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "type": "image",
+                                    "props": {
+                                        "src": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400",
+                                        "width": 230,
+                                        "height": 110,
+                                        "cornerRadius": 10,
+                                        "stroke": "#444444",
+                                        "strokeWidth": 3
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "DESSERTS",
+                                        "fontSize": 14,
+                                        "fontFamily": "$fonts.heading",
+                                        "color": "#000000",
+                                        "textAlign": "center",
+                                        "backgroundColor": "$colors.accent"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Chocolate Cake            $3.00"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Ice Cream                 $2.50"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Fruit Salad               $2.80"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Cheesecake                $4.00"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Banana Fritters           $2.20"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "type": "image",
+                                    "props": {
+                                        "src": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400",
+                                        "width": 230,
+                                        "height": 110,
+                                        "cornerRadius": 10,
+                                        "stroke": "#444444",
+                                        "strokeWidth": 3
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "DRINKS",
+                                        "fontSize": 14,
+                                        "fontFamily": "$fonts.heading",
+                                        "color": "#000000",
+                                        "textAlign": "center",
+                                        "backgroundColor": "$colors.accent"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Mineral Water             $1.00"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Iced Tea                  $1.50"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Orange Juice              $2.00"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Hot Coffee                $2.20"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Iced Coffee               $2.50"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 15
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "layout": "row",
+                    "gap": 20,
+                    "children": [
+                        {
+                            "type": "text",
+                            "props": {
+                                "content": "Further information:",
+                                "fontSize": 11,
+                                "fontFamily": "$fonts.body",
+                                "color": "$colors.secondary"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "props": {
+                                "content": "+123-456-7890",
+                                "fontSize": 11,
+                                "fontFamily": "$fonts.body",
+                                "fontWeight": "bold",
+                                "color": "$colors.primary"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "props": {
+                                "content": "123 Anywhere St., Any City",
+                                "fontSize": 11,
+                                "fontFamily": "$fonts.body",
+                                "fontStyle": "italic",
+                                "color": "$colors.primary"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cocktails",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 20,
+            "children": [
+                {
+                    "use": "pageTitle",
+                    "props": {
+                        "content": "COCKTAILS"
+                    }
+                },
+                {
+                    "use": "subtitle",
+                    "props": {
+                        "content": "CRAFT COCKTAILS & SPIRITS"
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "layout": "stack",
+                    "gap": 20,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 6,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Old Fashioned — $14"
+                                    }
+                                },
+                                {
+                                    "use": "description",
+                                    "props": {
+                                        "content": "Bourbon, bitters, sugar, orange zest"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 6,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Negroni — $13"
+                                    }
+                                },
+                                {
+                                    "use": "description",
+                                    "props": {
+                                        "content": "Gin, Campari, sweet vermouth"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 6,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Espresso Martini — $15"
+                                    }
+                                },
+                                {
+                                    "use": "description",
+                                    "props": {
+                                        "content": "Vodka, espresso, coffee liqueur, vanilla"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 6,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Mojito — $12"
+                                    }
+                                },
+                                {
+                                    "use": "description",
+                                    "props": {
+                                        "content": "White rum, lime, mint, soda"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 6,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Manhattan — $14"
+                                    }
+                                },
+                                {
+                                    "use": "description",
+                                    "props": {
+                                        "content": "Rye whiskey, sweet vermouth, angostura"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 6,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Margarita — $13"
+                                    }
+                                },
+                                {
+                                    "use": "description",
+                                    "props": {
+                                        "content": "Tequila, triple sec, lime, salt rim"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 30
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "Please drink responsibly. Must be 21+ to order.",
+                        "fontSize": 10,
+                        "fontFamily": "$fonts.body",
+                        "color": "$colors.secondary",
+                        "textAlign": "center"
+                    }
+                }
+            ]
+        }
+    ]
+}

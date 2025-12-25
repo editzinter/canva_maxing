@@ -1,0 +1,485 @@
+{
+    "id": "chalkboard-cafe",
+    "name": "Chalkboard Cafe",
+    "version": "1.0",
+    "meta": {
+        "category": "Cafe",
+        "orientation": "portrait",
+        "thumbnail": "/assets/templates/chalkboard-cafe.png"
+    },
+    "style": {
+        "background": "#1e1e1e",
+        "fonts": {
+            "heading": "Fredericka the Great",
+            "body": "Manrope"
+        },
+        "colors": {
+            "primary": "#f5f5dc",
+            "secondary": "#d4d4c4",
+            "accent": "#ffffff"
+        }
+    },
+    "pages": [
+        {
+            "id": "menu",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "FAUGET COFFEE",
+                    "position": {
+                        "x": "center",
+                        "y": 50,
+                        "width": 500
+                    },
+                    "fontSize": 48,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "EST. 2024",
+                    "position": {
+                        "x": "center",
+                        "y": 110,
+                        "width": 200
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "textAlign": "center",
+                    "charSpacing": 200
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": "center",
+                        "y": 140,
+                        "width": 200,
+                        "height": 2
+                    },
+                    "fill": "#d4d4c4"
+                },
+                {
+                    "type": "text",
+                    "content": "Menu",
+                    "position": {
+                        "x": "center",
+                        "y": 170,
+                        "width": 300
+                    },
+                    "fontSize": 60,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "Coffee",
+                    "position": {
+                        "x": "center",
+                        "y": 250,
+                        "width": 300
+                    },
+                    "fontSize": 36,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "Espresso.............$12.99\nCappuccino.........$23.55\nMochacino...........$22.00\nAmericano...........$15.00\nCoffee Milk..........$17.00",
+                    "position": {
+                        "x": 50,
+                        "y": 300,
+                        "width": 230
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "lineHeight": 1.8
+                },
+                {
+                    "type": "text",
+                    "content": "Machiato.............$12.99\nIced Cappuccino.$23.55\nMocha Latte........$22.00\nVanilla Latte.......$15.00\nBrown Sugar.......$17.00",
+                    "position": {
+                        "x": 315,
+                        "y": 300,
+                        "width": 230
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "lineHeight": 1.8
+                },
+                {
+                    "type": "text",
+                    "content": "Pastries",
+                    "position": {
+                        "x": "center",
+                        "y": 470,
+                        "width": 300
+                    },
+                    "fontSize": 36,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "Croissant.............$8.00\nMuffin...................$6.50\nDanish..................$7.00\nScone...................$5.50",
+                    "position": {
+                        "x": 50,
+                        "y": 520,
+                        "width": 230
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "lineHeight": 1.8
+                },
+                {
+                    "type": "text",
+                    "content": "Cinnamon Roll....$9.00\nBrownie................$7.50\nCookie..................$4.00\nCheesecake........$8.50",
+                    "position": {
+                        "x": 315,
+                        "y": 520,
+                        "width": 230
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "lineHeight": 1.8
+                },
+                {
+                    "type": "text",
+                    "content": "Handcrafted with love since 2024",
+                    "position": {
+                        "x": "center",
+                        "y": 750,
+                        "width": 400
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "fontStyle": "italic",
+                    "color": "secondary",
+                    "textAlign": "center"
+                }
+            ]
+        },
+        {
+            "id": "story",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Our Story",
+                    "position": {
+                        "x": "center",
+                        "y": 80,
+                        "width": 400
+                    },
+                    "fontSize": 60,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": "center",
+                        "y": 160,
+                        "width": 150,
+                        "height": 2
+                    },
+                    "fill": "#d4d4c4"
+                },
+                {
+                    "type": "text",
+                    "content": "Fauget Coffee started as a small corner shop with a big dream: to serve the perfect cup every single time. Our beans are sourced from sustainable farms around the world, roasted locally, and brewed with care.",
+                    "position": {
+                        "x": "center",
+                        "y": 200,
+                        "width": 450
+                    },
+                    "fontSize": 16,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "lineHeight": 1.6
+                },
+                {
+                    "type": "text",
+                    "content": "Visit Us",
+                    "position": {
+                        "x": "center",
+                        "y": 400,
+                        "width": 300
+                    },
+                    "fontSize": 48,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "123 Coffee Lane, Bean District\nMon-Fri: 7am - 8pm\nSat-Sun: 8am - 6pm",
+                    "position": {
+                        "x": "center",
+                        "y": 480,
+                        "width": 350
+                    },
+                    "fontSize": 16,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "lineHeight": 1.6
+                },
+                {
+                    "type": "text",
+                    "content": "@faugetcoffee",
+                    "position": {
+                        "x": "center",
+                        "y": 580,
+                        "width": 200
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "color": "accent",
+                    "textAlign": "center"
+                }
+            ]
+        },
+        {
+            "id": "specials",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Daily Specials",
+                    "position": {
+                        "x": "center",
+                        "y": 80,
+                        "width": 400
+                    },
+                    "fontSize": 54,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": "center",
+                        "y": 160,
+                        "width": 200,
+                        "height": 2
+                    },
+                    "fill": "#d4d4c4"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": "center",
+                        "y": 200,
+                        "width": 450,
+                        "height": 120
+                    },
+                    "fill": "#2a2a2a",
+                    "rx": 10,
+                    "ry": 10
+                },
+                {
+                    "type": "text",
+                    "content": "Morning Fuel Combo",
+                    "position": {
+                        "x": "center",
+                        "y": 220,
+                        "width": 400
+                    },
+                    "fontSize": 28,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "Any coffee + pastry = $15",
+                    "position": {
+                        "x": "center",
+                        "y": 265,
+                        "width": 400
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": "center",
+                        "y": 360,
+                        "width": 450,
+                        "height": 120
+                    },
+                    "fill": "#2a2a2a",
+                    "rx": 10,
+                    "ry": 10
+                },
+                {
+                    "type": "text",
+                    "content": "Happy Hour",
+                    "position": {
+                        "x": "center",
+                        "y": 380,
+                        "width": 400
+                    },
+                    "fontSize": 28,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "2-4 PM: 20% off all iced drinks",
+                    "position": {
+                        "x": "center",
+                        "y": 425,
+                        "width": 400
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": "center",
+                        "y": 520,
+                        "width": 450,
+                        "height": 120
+                    },
+                    "fill": "#2a2a2a",
+                    "rx": 10,
+                    "ry": 10
+                },
+                {
+                    "type": "text",
+                    "content": "Weekend Brunch",
+                    "position": {
+                        "x": "center",
+                        "y": 540,
+                        "width": 400
+                    },
+                    "fontSize": 28,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "Free coffee with any $20+ order",
+                    "position": {
+                        "x": "center",
+                        "y": 585,
+                        "width": 400
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "textAlign": "center"
+                }
+            ]
+        },
+        {
+            "id": "contact",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Thank You",
+                    "position": {
+                        "x": "center",
+                        "y": 200,
+                        "width": 400
+                    },
+                    "fontSize": 72,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "for visiting",
+                    "position": {
+                        "x": "center",
+                        "y": 280,
+                        "width": 300
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "body",
+                    "fontStyle": "italic",
+                    "color": "secondary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": "center",
+                        "y": 340,
+                        "width": 150,
+                        "height": 2
+                    },
+                    "fill": "#d4d4c4"
+                },
+                {
+                    "type": "text",
+                    "content": "FAUGET COFFEE",
+                    "position": {
+                        "x": "center",
+                        "y": 380,
+                        "width": 400
+                    },
+                    "fontSize": 36,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "Where every cup tells a story",
+                    "position": {
+                        "x": "center",
+                        "y": 440,
+                        "width": 350
+                    },
+                    "fontSize": 16,
+                    "fontFamily": "body",
+                    "fontStyle": "italic",
+                    "color": "secondary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "www.faugetcoffee.com\n+1 (555) 123-BREW",
+                    "position": {
+                        "x": "center",
+                        "y": 550,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "lineHeight": 1.5
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,422 @@
+{
+    "version": "3.0",
+    "id": "modern-plate",
+    "name": "The Modern Plate",
+    "meta": {
+        "category": "Restaurant",
+        "orientation": "portrait"
+    },
+    "tokens": {
+        "colors": {
+            "primary": "#1a1a1a",
+            "secondary": "#52525b",
+            "accent": "#1a1a1a",
+            "background": "#f4f1ea",
+            "muted": "#e5e2db"
+        },
+        "fonts": {
+            "heading": "Bebas Neue",
+            "body": "Manrope"
+        }
+    },
+    "components": {
+        "pageTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 48,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.primary",
+                "textAlign": "center"
+            }
+        },
+        "subtitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 12,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "textAlign": "center",
+                "charSpacing": 150
+            }
+        },
+        "sectionTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 24,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.primary",
+                "textAlign": "center"
+            }
+        },
+        "menuItem": {
+            "type": "text",
+            "props": {
+                "fontSize": 14,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.primary",
+                "textAlign": "center"
+            }
+        },
+        "description": {
+            "type": "text",
+            "props": {
+                "fontSize": 11,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "textAlign": "center",
+                "lineHeight": 1.4
+            }
+        },
+        "price": {
+            "type": "text",
+            "props": {
+                "fontSize": 18,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.primary",
+                "textAlign": "center"
+            }
+        },
+        "divider": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.primary",
+                "height": 2
+            }
+        },
+        "thinDivider": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.muted",
+                "height": 1
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "menu",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 18,
+            "children": [
+                {
+                    "use": "pageTitle",
+                    "props": {
+                        "content": "THE MODERN PLATE"
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "STARTERS"
+                    }
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Salmon Ceviche"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Fresh salmon, citrus, avocado, tortilla chips"
+                            }
+                        },
+                        {
+                            "use": "price",
+                            "props": {
+                                "content": "$14"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Crispy Calamari"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Lightly fried, lemon aioli, marinara"
+                            }
+                        },
+                        {
+                            "use": "price",
+                            "props": {
+                                "content": "$12"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "MAINS"
+                    }
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Grilled Sea Bass"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Mediterranean herbs, roasted vegetables, lemon butter"
+                            }
+                        },
+                        {
+                            "use": "price",
+                            "props": {
+                                "content": "$32"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Herb Roasted Chicken"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Free-range, truffle mash, seasonal greens"
+                            }
+                        },
+                        {
+                            "use": "price",
+                            "props": {
+                                "content": "$28"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Prime Ribeye"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "12oz dry-aged, garlic butter, hand-cut fries"
+                            }
+                        },
+                        {
+                            "use": "price",
+                            "props": {
+                                "content": "$45"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "desserts",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 18,
+            "children": [
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "DESSERTS"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Chocolate Fondant"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Warm molten center, vanilla ice cream"
+                            }
+                        },
+                        {
+                            "use": "price",
+                            "props": {
+                                "content": "$12"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Crème Brûlée"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Classic French custard, caramelized sugar"
+                            }
+                        },
+                        {
+                            "use": "price",
+                            "props": {
+                                "content": "$10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 4,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Seasonal Fruit Tart"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Fresh berries, pastry cream, shortbread"
+                            }
+                        },
+                        {
+                            "use": "price",
+                            "props": {
+                                "content": "$11"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 20
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "BEVERAGES"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "columns",
+                    "gap": 20,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 8,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Espresso — $4"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Cappuccino — $5"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Herbal Tea — $4"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 8,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Digestif — $12"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Port Wine — $14"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Cognac — $18"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 30
+                },
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "Prices exclude tax.\nPlease inform your server of any allergies.",
+                        "fontSize": 10,
+                        "fontFamily": "$fonts.body",
+                        "color": "$colors.secondary",
+                        "textAlign": "center"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,681 @@
+{
+    "id": "zen-sushi",
+    "name": "Zen Sushi",
+    "version": "1.0",
+    "meta": {
+        "category": "Restaurant",
+        "orientation": "portrait",
+        "thumbnail": "/assets/templates/zen-sushi.png"
+    },
+    "style": {
+        "background": "#f4f1ea",
+        "fonts": {
+            "heading": "Cinzel",
+            "body": "Manrope"
+        },
+        "colors": {
+            "primary": "#2c2c2c",
+            "secondary": "#4a4a4a",
+            "accent": "#d64045"
+        }
+    },
+    "pages": [
+        {
+            "id": "cover",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "ZEN\nSUSHI",
+                    "position": {
+                        "x": "center",
+                        "y": 250,
+                        "width": 500
+                    },
+                    "fontSize": 80,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "lineHeight": 0.9
+                },
+                {
+                    "type": "text",
+                    "content": "OMAKASE & SAKE",
+                    "position": {
+                        "x": "center",
+                        "y": 150,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "accent",
+                    "textAlign": "center",
+                    "charSpacing": 300
+                },
+                {
+                    "type": "text",
+                    "content": "AUTHENTIC JAPANESE CUISINE",
+                    "position": {
+                        "x": "center",
+                        "y": 692,
+                        "width": 400
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "textAlign": "center",
+                    "charSpacing": 400
+                }
+            ]
+        },
+        {
+            "id": "omakase",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "CHEF'S OMAKASE",
+                    "position": {
+                        "x": "center",
+                        "y": 60,
+                        "width": 500
+                    },
+                    "fontSize": 54,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "A SEASONAL JOURNEY",
+                    "position": {
+                        "x": "center",
+                        "y": 120,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "secondary",
+                    "textAlign": "center",
+                    "charSpacing": 200
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg",
+                    "position": {
+                        "x": 60,
+                        "y": 180,
+                        "width": 120,
+                        "height": 120
+                    },
+                    "clipShape": "rect",
+                    "cornerRadius": 4,
+                    "fit": "cover"
+                },
+                {
+                    "type": "text",
+                    "content": "SAKURA SET",
+                    "position": {
+                        "x": 200,
+                        "y": 185,
+                        "width": 300
+                    },
+                    "fontSize": 28,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$85",
+                    "position": {
+                        "x": 520,
+                        "y": 190
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "A curated selection of seasonal delicacies.\nIncludes 10 pcs Nigiri, Miso Soup, and Dessert.\nPerfect for first-time omakase diners.",
+                    "position": {
+                        "x": 200,
+                        "y": 225,
+                        "width": 320
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "lineHeight": 1.5
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg",
+                    "position": {
+                        "x": 60,
+                        "y": 340,
+                        "width": 120,
+                        "height": 120
+                    },
+                    "clipShape": "rect",
+                    "cornerRadius": 4,
+                    "fit": "cover"
+                },
+                {
+                    "type": "text",
+                    "content": "PREMIUM SET",
+                    "position": {
+                        "x": 200,
+                        "y": 345,
+                        "width": 300
+                    },
+                    "fontSize": 28,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$120",
+                    "position": {
+                        "x": 520,
+                        "y": 350
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Our chef's finest selection of rare ingredients.\nFeatures 12 pcs Premium Nigiri including Toro (Fatty Tuna) and Uni (Sea Urchin).",
+                    "position": {
+                        "x": 200,
+                        "y": 385,
+                        "width": 320
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "lineHeight": 1.5
+                },
+                {
+                    "type": "rect",
+                    "position": {
+                        "x": 60,
+                        "y": 500,
+                        "width": 480,
+                        "height": 1
+                    },
+                    "fill": "#e5e5e5"
+                },
+                {
+                    "type": "text",
+                    "content": "Please inform your server of any allergies.",
+                    "position": {
+                        "x": "center",
+                        "y": 530,
+                        "width": 400
+                    },
+                    "fontSize": 10,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "textAlign": "center",
+                    "fontStyle": "italic"
+                }
+            ]
+        },
+        {
+            "id": "nigiri",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "NIGIRI SELECT",
+                    "position": {
+                        "x": "center",
+                        "y": 50,
+                        "width": 500
+                    },
+                    "fontSize": 54,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/359993/pexels-photo-359993.jpeg",
+                    "position": {
+                        "x": 60,
+                        "y": 140,
+                        "width": 220,
+                        "height": 140
+                    },
+                    "clipShape": "rect",
+                    "cornerRadius": 2,
+                    "fit": "cover"
+                },
+                {
+                    "type": "text",
+                    "content": "SALMON (SAKE)",
+                    "position": {
+                        "x": 60,
+                        "y": 290,
+                        "width": 180
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$8",
+                    "position": {
+                        "x": 250,
+                        "y": 290
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/1199994/pexels-photo-1199994.jpeg",
+                    "position": {
+                        "x": 320,
+                        "y": 140,
+                        "width": 220,
+                        "height": 140
+                    },
+                    "clipShape": "rect",
+                    "cornerRadius": 2,
+                    "fit": "cover"
+                },
+                {
+                    "type": "text",
+                    "content": "TUNA (MAGURO)",
+                    "position": {
+                        "x": 320,
+                        "y": 290,
+                        "width": 180
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$9",
+                    "position": {
+                        "x": 510,
+                        "y": 290
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/1052189/pexels-photo-1052189.jpeg",
+                    "position": {
+                        "x": 60,
+                        "y": 350,
+                        "width": 220,
+                        "height": 140
+                    },
+                    "clipShape": "rect",
+                    "cornerRadius": 2,
+                    "fit": "cover"
+                },
+                {
+                    "type": "text",
+                    "content": "HAMACHI",
+                    "position": {
+                        "x": 60,
+                        "y": 500,
+                        "width": 180
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$10",
+                    "position": {
+                        "x": 250,
+                        "y": 500
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/2098143/pexels-photo-2098143.jpeg",
+                    "position": {
+                        "x": 320,
+                        "y": 350,
+                        "width": 220,
+                        "height": 140
+                    },
+                    "clipShape": "rect",
+                    "cornerRadius": 2,
+                    "fit": "cover"
+                },
+                {
+                    "type": "text",
+                    "content": "UNI (SEA URCHIN)",
+                    "position": {
+                        "x": 320,
+                        "y": 500,
+                        "width": 180
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "MP",
+                    "position": {
+                        "x": 510,
+                        "y": 500
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "color": "accent",
+                    "textAlign": "right"
+                }
+            ]
+        },
+        {
+            "id": "rolls",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "SIGNATURE ROLLS",
+                    "position": {
+                        "x": "center",
+                        "y": 60,
+                        "width": 500
+                    },
+                    "fontSize": 54,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "CLASSIC",
+                    "position": {
+                        "x": 60,
+                        "y": 140,
+                        "width": 220
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "left",
+                    "charSpacing": 100
+                },
+                {
+                    "type": "rect",
+                    "position": {
+                        "x": 60,
+                        "y": 175,
+                        "width": 220,
+                        "height": 2
+                    },
+                    "fill": "accent"
+                },
+                {
+                    "type": "text",
+                    "content": "California Roll",
+                    "position": {
+                        "x": 60,
+                        "y": 190
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$8",
+                    "position": {
+                        "x": 260,
+                        "y": 190
+                    },
+                    "fontSize": 14,
+                    "color": "secondary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Spicy Tuna Roll",
+                    "position": {
+                        "x": 60,
+                        "y": 220
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$9",
+                    "position": {
+                        "x": 260,
+                        "y": 220
+                    },
+                    "fontSize": 14,
+                    "color": "secondary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Philadelphia Roll",
+                    "position": {
+                        "x": 60,
+                        "y": 250
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$9.50",
+                    "position": {
+                        "x": 260,
+                        "y": 250
+                    },
+                    "fontSize": 14,
+                    "color": "secondary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "SPECIAL",
+                    "position": {
+                        "x": 320,
+                        "y": 140,
+                        "width": 220
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "left",
+                    "charSpacing": 100
+                },
+                {
+                    "type": "rect",
+                    "position": {
+                        "x": 320,
+                        "y": 175,
+                        "width": 220,
+                        "height": 2
+                    },
+                    "fill": "accent"
+                },
+                {
+                    "type": "text",
+                    "content": "Dragon Roll",
+                    "position": {
+                        "x": 320,
+                        "y": 190
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$14",
+                    "position": {
+                        "x": 520,
+                        "y": 190
+                    },
+                    "fontSize": 14,
+                    "color": "secondary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Rainbow Roll",
+                    "position": {
+                        "x": 320,
+                        "y": 220
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$15",
+                    "position": {
+                        "x": 520,
+                        "y": 220
+                    },
+                    "fontSize": 14,
+                    "color": "secondary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Spider Roll",
+                    "position": {
+                        "x": 320,
+                        "y": 250
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$16",
+                    "position": {
+                        "x": 520,
+                        "y": 250
+                    },
+                    "fontSize": 14,
+                    "color": "secondary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/8951203/pexels-photo-8951203.jpeg",
+                    "position": {
+                        "x": 60,
+                        "y": 320,
+                        "width": 480,
+                        "height": 200
+                    },
+                    "clipShape": "rect",
+                    "cornerRadius": 2,
+                    "fit": "cover"
+                }
+            ]
+        },
+        {
+            "id": "info",
+            "elements": [
+                {
+                    "type": "rect",
+                    "position": {
+                        "x": 60,
+                        "y": 60,
+                        "width": 480,
+                        "height": 480
+                    },
+                    "fill": "transparent",
+                    "stroke": "accent",
+                    "strokeWidth": 2
+                },
+                {
+                    "type": "text",
+                    "content": "ZEN SUSHI",
+                    "position": {
+                        "x": "center",
+                        "y": 180,
+                        "width": 400
+                    },
+                    "fontSize": 48,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "EXPERIENCE THE ART",
+                    "position": {
+                        "x": "center",
+                        "y": 240,
+                        "width": 300
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "secondary",
+                    "textAlign": "center",
+                    "charSpacing": 300
+                },
+                {
+                    "type": "text",
+                    "content": "123 Sakura Lane, Kyoto District\nNew York, NY 10012",
+                    "position": {
+                        "x": "center",
+                        "y": 300,
+                        "width": 400
+                    },
+                    "fontSize": 16,
+                    "fontFamily": "body",
+                    "color": "primary",
+                    "textAlign": "center",
+                    "lineHeight": 1.6
+                },
+                {
+                    "type": "text",
+                    "content": "RESERVATIONS\n+1 (212) 555-0199\nreservations@zensushi.com",
+                    "position": {
+                        "x": "center",
+                        "y": 380,
+                        "width": 400
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "textAlign": "center",
+                    "lineHeight": 1.8
+                }
+            ]
+        }
+    ]
+}

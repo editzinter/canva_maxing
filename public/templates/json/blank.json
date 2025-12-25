@@ -1,0 +1,43 @@
+{
+    "version": "3.0",
+    "id": "blank",
+    "name": "Blank Canvas",
+    "meta": {
+        "category": "Custom",
+        "orientation": "portrait"
+    },
+    "tokens": {
+        "colors": {
+            "primary": "#1a1a1a",
+            "secondary": "#666666",
+            "accent": "#3b82f6",
+            "background": "#ffffff"
+        },
+        "fonts": {
+            "heading": "Inter",
+            "body": "Inter"
+        }
+    },
+    "components": {},
+    "pages": [
+        {
+            "id": "page-1",
+            "background": "$colors.background",
+            "layout": "centered",
+            "padding": 40,
+            "gap": 16,
+            "children": [
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "Start Creating",
+                        "fontSize": 24,
+                        "fontFamily": "$fonts.heading",
+                        "color": "#cccccc",
+                        "textAlign": "center"
+                    }
+                }
+            ]
+        }
+    ]
+}

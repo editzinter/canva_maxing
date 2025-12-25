@@ -1,0 +1,1328 @@
+{
+    "id": "daily-grind",
+    "name": "Daily Grind",
+    "version": "1.0",
+    "meta": {
+        "category": "Cafe",
+        "orientation": "landscape",
+        "thumbnail": "/assets/templates/daily-grind.png"
+    },
+    "style": {
+        "background": "#18181b",
+        "fonts": {
+            "heading": "Bebas Neue",
+            "body": "Manrope"
+        },
+        "colors": {
+            "primary": "#ffffff",
+            "secondary": "#a1a1aa",
+            "accent": "#facc15"
+        }
+    },
+    "pages": [
+        {
+            "id": "cover",
+            "elements": [
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 269,
+                        "height": 595
+                    },
+                    "fill": "#facc15"
+                },
+                {
+                    "type": "text",
+                    "content": "THE DAILY",
+                    "position": {
+                        "x": 25,
+                        "y": 40,
+                        "width": 220
+                    },
+                    "fontSize": 48,
+                    "fontFamily": "heading",
+                    "color": "#18181b",
+                    "lineHeight": 0.9
+                },
+                {
+                    "type": "text",
+                    "content": "GRIND",
+                    "position": {
+                        "x": 25,
+                        "y": 85,
+                        "width": 220
+                    },
+                    "fontSize": 72,
+                    "fontFamily": "heading",
+                    "color": "#18181b",
+                    "lineHeight": 0.9
+                },
+                {
+                    "type": "text",
+                    "content": "& BOWL",
+                    "position": {
+                        "x": 25,
+                        "y": 150,
+                        "width": 220
+                    },
+                    "fontSize": 72,
+                    "fontFamily": "heading",
+                    "color": "#18181b",
+                    "lineHeight": 0.9
+                },
+                {
+                    "type": "text",
+                    "content": "MODERN CAFE & KITCHEN",
+                    "position": {
+                        "x": 25,
+                        "y": 230,
+                        "width": 220
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "#18181b",
+                    "charSpacing": 50
+                },
+                {
+                    "type": "text",
+                    "content": "SMOOTHIE\nBOWLS",
+                    "position": {
+                        "x": 309,
+                        "y": 40,
+                        "width": 240
+                    },
+                    "fontSize": 42,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "lineHeight": 0.9
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 309,
+                        "y": 130,
+                        "width": 240,
+                        "height": 2
+                    },
+                    "fill": "accent"
+                },
+                {
+                    "type": "text",
+                    "content": "SUNRISE ZEST",
+                    "position": {
+                        "x": 309,
+                        "y": 160,
+                        "width": 180
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "charSpacing": 50
+                },
+                {
+                    "type": "text",
+                    "content": "$14.50",
+                    "position": {
+                        "x": 509,
+                        "y": 160
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "primary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Mango, Pineapple, Turmeric, Coconut Milk, Granola, Chia Seeds",
+                    "position": {
+                        "x": 309,
+                        "y": 185,
+                        "width": 240
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "lineHeight": 1.3
+                },
+                {
+                    "type": "text",
+                    "content": "AÇAÍ ZEN",
+                    "position": {
+                        "x": 309,
+                        "y": 245,
+                        "width": 180
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "charSpacing": 50
+                },
+                {
+                    "type": "text",
+                    "content": "$15.00",
+                    "position": {
+                        "x": 509,
+                        "y": 245
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "primary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Açaí Berry, Banana, Blueberries, Almond Butter, Hemp Seeds",
+                    "position": {
+                        "x": 309,
+                        "y": 270,
+                        "width": 240
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "lineHeight": 1.3
+                },
+                {
+                    "type": "text",
+                    "content": "TROPICAL BLISS",
+                    "position": {
+                        "x": 309,
+                        "y": 330,
+                        "width": 180
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "charSpacing": 50
+                },
+                {
+                    "type": "text",
+                    "content": "$16.00",
+                    "position": {
+                        "x": 509,
+                        "y": 330
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "primary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Dragon Fruit, Papaya, Lime, Passion Fruit, Coconut Flakes",
+                    "position": {
+                        "x": 309,
+                        "y": 355,
+                        "width": 240
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "lineHeight": 1.3
+                },
+                {
+                    "type": "text",
+                    "content": "GREEN GODDESS",
+                    "position": {
+                        "x": 309,
+                        "y": 415,
+                        "width": 180
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "charSpacing": 50
+                },
+                {
+                    "type": "text",
+                    "content": "$15.50",
+                    "position": {
+                        "x": 509,
+                        "y": 415
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "primary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Spinach, Kale, Avocado, Matcha, Pistachios, Honey Drizzle",
+                    "position": {
+                        "x": 309,
+                        "y": 440,
+                        "width": 240
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "lineHeight": 1.3
+                },
+                {
+                    "type": "text",
+                    "content": "COFFEE",
+                    "position": {
+                        "x": 589,
+                        "y": 40,
+                        "width": 240
+                    },
+                    "fontSize": 42,
+                    "fontFamily": "heading",
+                    "color": "accent"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 589,
+                        "y": 130,
+                        "width": 240,
+                        "height": 2
+                    },
+                    "fill": "accent"
+                },
+                {
+                    "type": "text",
+                    "content": "ESPRESSO",
+                    "position": {
+                        "x": 589,
+                        "y": 160,
+                        "width": 180
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "charSpacing": 50
+                },
+                {
+                    "type": "text",
+                    "content": "$4.00",
+                    "position": {
+                        "x": 789,
+                        "y": 160
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "primary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Double Shot, Single Origin",
+                    "position": {
+                        "x": 589,
+                        "y": 185,
+                        "width": 240
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "text",
+                    "content": "FLAT WHITE",
+                    "position": {
+                        "x": 589,
+                        "y": 235,
+                        "width": 180
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "charSpacing": 50
+                },
+                {
+                    "type": "text",
+                    "content": "$5.00",
+                    "position": {
+                        "x": 789,
+                        "y": 235
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "primary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Silky Microfoam, Double Shot",
+                    "position": {
+                        "x": 589,
+                        "y": 260,
+                        "width": 240
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "text",
+                    "content": "COLD BREW",
+                    "position": {
+                        "x": 589,
+                        "y": 310,
+                        "width": 180
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "charSpacing": 50
+                },
+                {
+                    "type": "text",
+                    "content": "$5.50",
+                    "position": {
+                        "x": 789,
+                        "y": 310
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "primary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "24-Hour Steep, Smooth & Bold",
+                    "position": {
+                        "x": 589,
+                        "y": 335,
+                        "width": 240
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "text",
+                    "content": "POUR OVER",
+                    "position": {
+                        "x": 589,
+                        "y": 385,
+                        "width": 180
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "charSpacing": 50
+                },
+                {
+                    "type": "text",
+                    "content": "$6.00",
+                    "position": {
+                        "x": 789,
+                        "y": 385
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "primary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Rotating Single Origin, Hand Brewed",
+                    "position": {
+                        "x": 589,
+                        "y": 410,
+                        "width": 240
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "text",
+                    "content": "LATTE",
+                    "position": {
+                        "x": 589,
+                        "y": 460,
+                        "width": 180
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "charSpacing": 50
+                },
+                {
+                    "type": "text",
+                    "content": "$5.50",
+                    "position": {
+                        "x": 789,
+                        "y": 460
+                    },
+                    "fontSize": 18,
+                    "fontFamily": "body",
+                    "fontWeight": "bold",
+                    "color": "primary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Steamed Milk, Double Shot, Art",
+                    "position": {
+                        "x": 589,
+                        "y": 485,
+                        "width": 240
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                }
+            ]
+        },
+        {
+            "id": "manifesto",
+            "elements": [
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 40,
+                        "y": 0,
+                        "width": 20,
+                        "height": 595
+                    },
+                    "fill": "#facc15"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 0,
+                        "y": 120,
+                        "width": 842,
+                        "height": 1
+                    },
+                    "fill": "#333333"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 505,
+                        "y": 0,
+                        "width": 1,
+                        "height": 595
+                    },
+                    "fill": "#333333"
+                },
+                {
+                    "type": "text",
+                    "content": "WE DON'T BREW.\nWE BUILD.",
+                    "position": {
+                        "x": 100,
+                        "y": 160,
+                        "width": 500
+                    },
+                    "fontSize": 100,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "lineHeight": 0.9
+                },
+                {
+                    "type": "text",
+                    "content": "At The Daily Grind, coffee isn't just a drink. It's the foundation of your day. We source beans like we source steel—strong, pure, and ready to support the heaviest loads. Our smoothie bowls are engineered for performance, designed to fuel your ambition from the ground up.",
+                    "position": {
+                        "x": 100,
+                        "y": 380,
+                        "width": 400
+                    },
+                    "fontSize": 16,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "lineHeight": 1.5
+                },
+                {
+                    "type": "text",
+                    "content": "EST. 2024\nAPPROVED",
+                    "position": {
+                        "x": 650,
+                        "y": 420,
+                        "width": 120
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "center"
+                }
+            ]
+        },
+        {
+            "id": "breakfast",
+            "elements": [
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 842,
+                        "height": 120
+                    },
+                    "fill": "#facc15"
+                },
+                {
+                    "type": "text",
+                    "content": "EARLY RISERS",
+                    "position": {
+                        "x": 40,
+                        "y": 20,
+                        "width": 500
+                    },
+                    "fontSize": 80,
+                    "fontFamily": "heading",
+                    "color": "#18181b",
+                    "lineHeight": 0.9
+                },
+                {
+                    "type": "text",
+                    "content": "TOASTS",
+                    "position": {
+                        "x": 50,
+                        "y": 150
+                    },
+                    "fontSize": 40,
+                    "fontFamily": "heading",
+                    "color": "accent"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 50,
+                        "y": 195,
+                        "width": 350,
+                        "height": 2
+                    },
+                    "fill": "#333333"
+                },
+                {
+                    "type": "text",
+                    "content": "AVO SMASH",
+                    "position": {
+                        "x": 50,
+                        "y": 220,
+                        "width": 250
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$12",
+                    "position": {
+                        "x": 350,
+                        "y": 220
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Sourdough, Chili Flakes, Lemon",
+                    "position": {
+                        "x": 50,
+                        "y": 245,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "text",
+                    "content": "RICOTTA HONEY",
+                    "position": {
+                        "x": 50,
+                        "y": 290,
+                        "width": 250
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$11",
+                    "position": {
+                        "x": 350,
+                        "y": 290
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Whipped Ricotta, Thyme, Hot Honey",
+                    "position": {
+                        "x": 50,
+                        "y": 315,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "text",
+                    "content": "MUSHROOM MELT",
+                    "position": {
+                        "x": 50,
+                        "y": 360,
+                        "width": 250
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$14",
+                    "position": {
+                        "x": 350,
+                        "y": 360
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Fontina, Truffle Oil, Chives",
+                    "position": {
+                        "x": 50,
+                        "y": 385,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "text",
+                    "content": "BAGELS",
+                    "position": {
+                        "x": 450,
+                        "y": 150
+                    },
+                    "fontSize": 40,
+                    "fontFamily": "heading",
+                    "color": "accent"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 450,
+                        "y": 195,
+                        "width": 350,
+                        "height": 2
+                    },
+                    "fill": "#333333"
+                },
+                {
+                    "type": "text",
+                    "content": "THE CLASSIC",
+                    "position": {
+                        "x": 450,
+                        "y": 220,
+                        "width": 250
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$8",
+                    "position": {
+                        "x": 750,
+                        "y": 220
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Everything Bagel, Plain Cream Cheese",
+                    "position": {
+                        "x": 450,
+                        "y": 245,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "text",
+                    "content": "LOX & LOADED",
+                    "position": {
+                        "x": 450,
+                        "y": 290,
+                        "width": 250
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$16",
+                    "position": {
+                        "x": 750,
+                        "y": 290
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Smoked Salmon, Capers, Red Onion",
+                    "position": {
+                        "x": 450,
+                        "y": 315,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "text",
+                    "content": "THE VEG",
+                    "position": {
+                        "x": 450,
+                        "y": 360,
+                        "width": 250
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$10",
+                    "position": {
+                        "x": 750,
+                        "y": 360
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Hummus, Cucumber, Sprout, Dill",
+                    "position": {
+                        "x": 450,
+                        "y": 385,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                }
+            ]
+        },
+        {
+            "id": "lunch",
+            "elements": [
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 40,
+                        "y": 0,
+                        "width": 20,
+                        "height": 595
+                    },
+                    "fill": "#facc15"
+                },
+                {
+                    "type": "text",
+                    "content": "HEAVY LIFTING",
+                    "position": {
+                        "x": 80,
+                        "y": 40,
+                        "width": 500
+                    },
+                    "fontSize": 60,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "lineHeight": 0.9
+                },
+                {
+                    "type": "text",
+                    "content": "SANDWICHES",
+                    "position": {
+                        "x": 80,
+                        "y": 130
+                    },
+                    "fontSize": 32,
+                    "fontFamily": "heading",
+                    "color": "accent"
+                },
+                {
+                    "type": "text",
+                    "content": "THE CONTRACTOR",
+                    "position": {
+                        "x": 80,
+                        "y": 180,
+                        "width": 220
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$16",
+                    "position": {
+                        "x": 340,
+                        "y": 180
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Chicken Pesto, Mozzarella, Arugula",
+                    "position": {
+                        "x": 80,
+                        "y": 205,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "text",
+                    "content": "WRECKING BALL",
+                    "position": {
+                        "x": 80,
+                        "y": 260,
+                        "width": 220
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$18",
+                    "position": {
+                        "x": 340,
+                        "y": 260
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Pastrami, Swiss, Sauerkraut, Rye",
+                    "position": {
+                        "x": 80,
+                        "y": 285,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "text",
+                    "content": "BLUEPRINT BURGER",
+                    "position": {
+                        "x": 80,
+                        "y": 340,
+                        "width": 220
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$17",
+                    "position": {
+                        "x": 340,
+                        "y": 340
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Wagyu, Cheddar, Bacon Jam, Brioche",
+                    "position": {
+                        "x": 80,
+                        "y": 365,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "text",
+                    "content": "POWER BOWLS",
+                    "position": {
+                        "x": 460,
+                        "y": 130
+                    },
+                    "fontSize": 32,
+                    "fontFamily": "heading",
+                    "color": "accent"
+                },
+                {
+                    "type": "text",
+                    "content": "QUINOA POWER",
+                    "position": {
+                        "x": 460,
+                        "y": 180,
+                        "width": 220
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$15",
+                    "position": {
+                        "x": 720,
+                        "y": 180
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Roasted Chickpeas, Kale, Tahini",
+                    "position": {
+                        "x": 460,
+                        "y": 205,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "text",
+                    "content": "SALMON BUILD",
+                    "position": {
+                        "x": 460,
+                        "y": 260,
+                        "width": 220
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$19",
+                    "position": {
+                        "x": 720,
+                        "y": 260
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Brown Rice, Edamame, Ginger Soy",
+                    "position": {
+                        "x": 460,
+                        "y": 285,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "text",
+                    "content": "STEAK & EGGS",
+                    "position": {
+                        "x": 460,
+                        "y": 340,
+                        "width": 220
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "$20",
+                    "position": {
+                        "x": 720,
+                        "y": 340
+                    },
+                    "fontSize": 20,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "Flank Steak, Fried Egg, Potato Hash",
+                    "position": {
+                        "x": 460,
+                        "y": 365,
+                        "width": 300
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                }
+            ]
+        },
+        {
+            "id": "dessert",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "THE FINISH",
+                    "position": {
+                        "x": "center",
+                        "y": 50,
+                        "width": 842
+                    },
+                    "fontSize": 60,
+                    "fontFamily": "heading",
+                    "color": "accent",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 300,
+                        "y": 120,
+                        "width": 242,
+                        "height": 2
+                    },
+                    "fill": "#333333"
+                },
+                {
+                    "type": "text",
+                    "content": "BANANA BREAD",
+                    "position": {
+                        "x": 220,
+                        "y": 160,
+                        "width": 300
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "$6",
+                    "position": {
+                        "x": 560,
+                        "y": 160,
+                        "width": 100
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "ALMOND CROISSANT",
+                    "position": {
+                        "x": 220,
+                        "y": 210,
+                        "width": 300
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "$7",
+                    "position": {
+                        "x": 560,
+                        "y": 210,
+                        "width": 100
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "PROTEIN BALLS",
+                    "position": {
+                        "x": 220,
+                        "y": 260,
+                        "width": 300
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "$5",
+                    "position": {
+                        "x": 560,
+                        "y": 260,
+                        "width": 100
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "text",
+                    "content": "AFFOGATO",
+                    "position": {
+                        "x": 220,
+                        "y": 310,
+                        "width": 300
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "textAlign": "right"
+                },
+                {
+                    "type": "text",
+                    "content": "$8",
+                    "position": {
+                        "x": 560,
+                        "y": 310,
+                        "width": 100
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "primary"
+                },
+                {
+                    "type": "shape",
+                    "shape": "rect",
+                    "position": {
+                        "x": 0,
+                        "y": 450,
+                        "width": 842,
+                        "height": 145
+                    },
+                    "fill": "#facc15"
+                },
+                {
+                    "type": "text",
+                    "content": "LOCATION",
+                    "position": {
+                        "x": 50,
+                        "y": 490
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "#18181b"
+                },
+                {
+                    "type": "text",
+                    "content": "123 Industrial Ave, Sector 7",
+                    "position": {
+                        "x": 50,
+                        "y": 520,
+                        "width": 250
+                    },
+                    "fontSize": 16,
+                    "fontFamily": "body",
+                    "color": "#18181b"
+                },
+                {
+                    "type": "text",
+                    "content": "HOURS",
+                    "position": {
+                        "x": 400,
+                        "y": 490
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "#18181b"
+                },
+                {
+                    "type": "text",
+                    "content": "Daily: 0600 - 1800",
+                    "position": {
+                        "x": 400,
+                        "y": 520,
+                        "width": 200
+                    },
+                    "fontSize": 16,
+                    "fontFamily": "body",
+                    "color": "#18181b"
+                },
+                {
+                    "type": "text",
+                    "content": "FOLLOW",
+                    "position": {
+                        "x": 650,
+                        "y": 490
+                    },
+                    "fontSize": 24,
+                    "fontFamily": "heading",
+                    "color": "#18181b"
+                },
+                {
+                    "type": "text",
+                    "content": "@DAILYGRIND",
+                    "position": {
+                        "x": 650,
+                        "y": 520,
+                        "width": 150
+                    },
+                    "fontSize": 16,
+                    "fontFamily": "body",
+                    "color": "#18181b"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,435 @@
+{
+    "version": "3.0",
+    "id": "slate-grill",
+    "name": "Slate Grill",
+    "meta": {
+        "category": "Restaurant",
+        "orientation": "portrait"
+    },
+    "tokens": {
+        "colors": {
+            "primary": "#ffffff",
+            "secondary": "#a1a1aa",
+            "accent": "#f4c430",
+            "background": "#1a1a1a",
+            "muted": "#333333"
+        },
+        "fonts": {
+            "heading": "Bebas Neue",
+            "body": "Manrope"
+        }
+    },
+    "components": {
+        "pageTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 56,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.primary"
+            }
+        },
+        "subtitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 12,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "textAlign": "center",
+                "charSpacing": 150
+            }
+        },
+        "sectionTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 22,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.accent"
+            }
+        },
+        "menuItem": {
+            "type": "text",
+            "props": {
+                "fontSize": 15,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.primary"
+            }
+        },
+        "description": {
+            "type": "text",
+            "props": {
+                "fontSize": 11,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.secondary",
+                "lineHeight": 1.4
+            }
+        },
+        "divider": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.accent",
+                "height": 2
+            }
+        },
+        "thinDivider": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.muted",
+                "height": 1
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "cover",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 20,
+            "children": [
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "FOOD\nMENU",
+                        "fontSize": 72,
+                        "fontFamily": "$fonts.heading",
+                        "color": "$colors.primary",
+                        "lineHeight": 0.95
+                    }
+                },
+                {
+                    "use": "description",
+                    "props": {
+                        "content": "Get a 30% discount voucher on the website."
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "layout": "columns",
+                    "gap": 30,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 16,
+                            "children": [
+                                {
+                                    "use": "sectionTitle",
+                                    "props": {
+                                        "content": "MAIN COURSE"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Cheeseburger — $34"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Cheese Sandwich — $22"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Chicken Burgers — $24"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Spicy Chicken — $33"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Hot Dog — $23"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 16,
+                            "children": [
+                                {
+                                    "use": "sectionTitle",
+                                    "props": {
+                                        "content": "SIDES"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "French Fries — $8"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Onion Rings — $9"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Coleslaw — $6"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Mac & Cheese — $10"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 20
+                },
+                {
+                    "layout": "columns",
+                    "gap": 30,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 16,
+                            "children": [
+                                {
+                                    "use": "sectionTitle",
+                                    "props": {
+                                        "content": "DESSERTS"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Ice Cream — $7"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Brownie — $8"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Apple Pie — $9"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 16,
+                            "children": [
+                                {
+                                    "use": "sectionTitle",
+                                    "props": {
+                                        "content": "DRINKS"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Soda — $3"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Milkshake — $7"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Iced Tea — $4"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "steaks",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 18,
+            "children": [
+                {
+                    "use": "pageTitle",
+                    "props": {
+                        "content": "GRILL SPECIALS"
+                    }
+                },
+                {
+                    "use": "subtitle",
+                    "props": {
+                        "content": "PREMIUM CUTS • CHARCOAL GRILLED"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Ribeye 12oz — $42"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "USDA Prime, herb butter, roasted garlic"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "NY Strip 14oz — $48"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Dry-aged 28 days, peppercorn crust"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Filet Mignon 8oz — $54"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Center cut, béarnaise sauce"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "gap": 6,
+                    "children": [
+                        {
+                            "use": "menuItem",
+                            "props": {
+                                "content": "Tomahawk 32oz — $85"
+                            }
+                        },
+                        {
+                            "use": "description",
+                            "props": {
+                                "content": "Bone-in ribeye, serves 2, chimichurri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 15
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "ADD-ONS"
+                    }
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "layout": "columns",
+                    "gap": 24,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Lobster Tail — $28"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Shrimp Skewer — $15"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 10,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Blue Cheese Crust — $6"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Truffle Butter — $8"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "height": 30
+                },
+                {
+                    "use": "thinDivider"
+                },
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "All steaks served with choice of two sides.\nConsumption of raw or undercooked food may pose health risks.",
+                        "fontSize": 10,
+                        "fontFamily": "$fonts.body",
+                        "color": "$colors.secondary",
+                        "textAlign": "center"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,976 @@
+{
+    "version": "3.0",
+    "id": "urban-flavors",
+    "name": "Urban Flavors",
+    "description": "Bold geometric design with a modern culinary feel.",
+    "tags": [
+        "Menu",
+        "Modern",
+        "Geometric"
+    ],
+    "tokens": {
+        "colors": {
+            "background": "#fdfbf7",
+            "primary": "#1a1f3c",
+            "secondary": "#f57b20",
+            "accent": "#d4e157",
+            "teal": "#00acc1",
+            "dark_teal": "#00838f",
+            "purple": "#7b1fa2",
+            "lime": "#cddc39",
+            "paper": "#ffffff",
+            "text": "#2d2d2d",
+            "muted": "#666666",
+            "dark_blue": "#202a44"
+        },
+        "fonts": {
+            "title": "Oswald",
+            "body": "Inter"
+        }
+    },
+    "pages": [
+        {
+            "id": "page-1",
+            "layout": "absolute",
+            "width": 595,
+            "height": 842,
+            "props": {
+                "fill": "$colors.background"
+            },
+            "children": [
+                {
+                    "type": "shape",
+                    "props": {
+                        "shape": "circle",
+                        "fill": "$colors.teal",
+                        "width": 400,
+                        "height": 400
+                    },
+                    "top": -100,
+                    "left": -200,
+                    "opacity": 1
+                },
+                {
+                    "type": "shape",
+                    "props": {
+                        "shape": "circle",
+                        "fill": "$colors.secondary",
+                        "width": 300,
+                        "height": 300
+                    },
+                    "top": -150,
+                    "left": 150,
+                    "opacity": 1
+                },
+                {
+                    "type": "shape",
+                    "props": {
+                        "shape": "circle",
+                        "fill": "$colors.accent",
+                        "width": 350,
+                        "height": 350
+                    },
+                    "top": -100,
+                    "right": -100,
+                    "opacity": 1
+                },
+                {
+                    "type": "shape",
+                    "props": {
+                        "shape": "circle",
+                        "fill": "$colors.accent",
+                        "width": 400,
+                        "height": 400
+                    },
+                    "bottom": -100,
+                    "left": -150,
+                    "opacity": 1
+                },
+                {
+                    "type": "shape",
+                    "props": {
+                        "shape": "circle",
+                        "fill": "$colors.secondary",
+                        "width": 300,
+                        "height": 300
+                    },
+                    "bottom": -150,
+                    "right": -50,
+                    "opacity": 1
+                },
+                {
+                    "type": "shape",
+                    "props": {
+                        "shape": "circle",
+                        "fill": "$colors.dark_blue",
+                        "width": 200,
+                        "height": 200
+                    },
+                    "bottom": -50,
+                    "left": 200,
+                    "opacity": 1
+                },
+                {
+                    "layout": "centered",
+                    "width": 595,
+                    "height": 842,
+                    "padding": {
+                        "top": 60,
+                        "bottom": 60
+                    },
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "width": 480,
+                            "props": {
+                                "fill": "$colors.paper",
+                                "shadow": {
+                                    "color": "rgba(0,0,0,0.3)",
+                                    "blur": 30,
+                                    "offsetX": 0,
+                                    "offsetY": 15
+                                }
+                            },
+                            "padding": 0,
+                            "children": [
+                                {
+                                    "layout": "stack",
+                                    "height": 140,
+                                    "padding": {
+                                        "top": 45,
+                                        "bottom": 30,
+                                        "left": 20,
+                                        "right": 20
+                                    },
+                                    "props": {
+                                        "fill": "$colors.primary"
+                                    },
+                                    "gap": 5,
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "URBAN FLAVORS",
+                                                "fontFamily": "$fonts.title",
+                                                "fontSize": 48,
+                                                "color": "#ffffff",
+                                                "textAlign": "center"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "STREET FOOD FUSION",
+                                                "fontFamily": "$fonts.body",
+                                                "fontSize": 14,
+                                                "fontWeight": "bold",
+                                                "color": "$colors.accent",
+                                                "textAlign": "center",
+                                                "charSpacing": 300
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "layout": "stack",
+                                    "padding": {
+                                        "top": 40,
+                                        "left": 50,
+                                        "right": 50,
+                                        "bottom": 50
+                                    },
+                                    "gap": 15,
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "SMALL PLATES",
+                                                "fontFamily": "$fonts.title",
+                                                "fontSize": 24,
+                                                "color": "$colors.primary",
+                                                "textAlign": "center",
+                                                "charSpacing": 100
+                                            }
+                                        },
+                                        {
+                                            "layout": "row",
+                                            "justify": "between",
+                                            "alignItems": "center",
+                                            "props": {
+                                                "fill": "#f9f9f9",
+                                                "cornerRadius": 8
+                                            },
+                                            "padding": 12,
+                                            "children": [
+                                                {
+                                                    "layout": "stack",
+                                                    "gap": 4,
+                                                    "children": [
+                                                        {
+                                                            "type": "text",
+                                                            "props": {
+                                                                "content": "Spicy Tuna Poke",
+                                                                "fontFamily": "$fonts.title",
+                                                                "fontSize": 16,
+                                                                "color": "$colors.primary"
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "props": {
+                                                                "content": "Fresh ahi tuna, avocado mousse, shaved cucumber, spicy yuzu mayo, crispy shallots.",
+                                                                "fontFamily": "$fonts.body",
+                                                                "fontSize": 11,
+                                                                "color": "$colors.muted",
+                                                                "width": 280
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "props": {
+                                                        "content": "$14",
+                                                        "fontFamily": "$fonts.title",
+                                                        "fontSize": 18,
+                                                        "fontWeight": "bold",
+                                                        "color": "$colors.primary"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "layout": "row",
+                                            "justify": "between",
+                                            "alignItems": "center",
+                                            "props": {
+                                                "fill": "#f9f9f9",
+                                                "cornerRadius": 8
+                                            },
+                                            "padding": 12,
+                                            "children": [
+                                                {
+                                                    "layout": "stack",
+                                                    "gap": 4,
+                                                    "children": [
+                                                        {
+                                                            "type": "text",
+                                                            "props": {
+                                                                "content": "Truffle Beef Bowl",
+                                                                "fontFamily": "$fonts.title",
+                                                                "fontSize": 16,
+                                                                "color": "$colors.primary"
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "props": {
+                                                                "content": "Sous-vide wagyu slices, truffle oil, onsen egg, pickled shiitake mushrooms over rice.",
+                                                                "fontFamily": "$fonts.body",
+                                                                "fontSize": 11,
+                                                                "color": "$colors.muted",
+                                                                "width": 280
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "props": {
+                                                        "content": "$18",
+                                                        "fontFamily": "$fonts.title",
+                                                        "fontSize": 18,
+                                                        "fontWeight": "bold",
+                                                        "color": "$colors.primary"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "spacer",
+                                            "height": 10
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "SHAREABLES",
+                                                "fontFamily": "$fonts.title",
+                                                "fontSize": 20,
+                                                "color": "$colors.teal"
+                                            }
+                                        },
+                                        {
+                                            "layout": "row",
+                                            "justify": "between",
+                                            "alignItems": "center",
+                                            "props": {
+                                                "fill": "#e0f7fa",
+                                                "cornerRadius": 8
+                                            },
+                                            "padding": 12,
+                                            "children": [
+                                                {
+                                                    "layout": "stack",
+                                                    "gap": 4,
+                                                    "children": [
+                                                        {
+                                                            "type": "text",
+                                                            "props": {
+                                                                "content": "Crispy Gyoza",
+                                                                "fontFamily": "$fonts.title",
+                                                                "fontSize": 16,
+                                                                "color": "$colors.dark_teal"
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "props": {
+                                                                "content": "Hand-folded pork dumplings, pan-seared, served with citrus ponzu sauce.",
+                                                                "fontFamily": "$fonts.body",
+                                                                "fontSize": 11,
+                                                                "color": "$colors.dark_teal",
+                                                                "width": 280
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "props": {
+                                                        "content": "$8",
+                                                        "fontFamily": "$fonts.title",
+                                                        "fontSize": 18,
+                                                        "fontWeight": "bold",
+                                                        "color": "$colors.dark_teal"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "layout": "row",
+                                            "justify": "between",
+                                            "alignItems": "center",
+                                            "props": {
+                                                "fill": "#e0f7fa",
+                                                "cornerRadius": 8
+                                            },
+                                            "padding": 12,
+                                            "children": [
+                                                {
+                                                    "layout": "stack",
+                                                    "gap": 4,
+                                                    "children": [
+                                                        {
+                                                            "type": "text",
+                                                            "props": {
+                                                                "content": "Takoyaki",
+                                                                "fontFamily": "$fonts.title",
+                                                                "fontSize": 16,
+                                                                "color": "$colors.dark_teal"
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "props": {
+                                                                "content": "Osaka-style octopus balls, bonito flakes, kewpie mayo, bulldog sauce.",
+                                                                "fontFamily": "$fonts.body",
+                                                                "fontSize": 11,
+                                                                "color": "$colors.dark_teal",
+                                                                "width": 280
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "props": {
+                                                        "content": "$9",
+                                                        "fontFamily": "$fonts.title",
+                                                        "fontSize": 18,
+                                                        "fontWeight": "bold",
+                                                        "color": "$colors.dark_teal"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "page-2",
+            "layout": "absolute",
+            "width": 595,
+            "height": 842,
+            "props": {
+                "fill": "$colors.background"
+            },
+            "children": [
+                {
+                    "type": "shape",
+                    "props": {
+                        "shape": "circle",
+                        "fill": "$colors.purple",
+                        "width": 500,
+                        "height": 500
+                    },
+                    "top": -200,
+                    "right": -200,
+                    "opacity": 0.8
+                },
+                {
+                    "type": "shape",
+                    "props": {
+                        "shape": "circle",
+                        "fill": "$colors.lime",
+                        "width": 300,
+                        "height": 300
+                    },
+                    "bottom": 50,
+                    "left": -100,
+                    "opacity": 0.8
+                },
+                {
+                    "layout": "centered",
+                    "padding": {
+                        "top": 60,
+                        "bottom": 60
+                    },
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "width": 480,
+                            "gap": 30,
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "CHEF'S SPECIALS",
+                                        "fontFamily": "$fonts.title",
+                                        "fontSize": 42,
+                                        "color": "$colors.primary",
+                                        "textAlign": "center"
+                                    }
+                                },
+                                {
+                                    "layout": "row",
+                                    "gap": 20,
+                                    "children": [
+                                        {
+                                            "layout": "stack",
+                                            "width": 230,
+                                            "props": {
+                                                "fill": "#fff",
+                                                "shadow": {
+                                                    "color": "rgba(0,0,0,0.1)",
+                                                    "blur": 10,
+                                                    "offsetY": 4
+                                                },
+                                                "cornerRadius": 8
+                                            },
+                                            "padding": 20,
+                                            "children": [
+                                                {
+                                                    "type": "image",
+                                                    "props": {
+                                                        "src": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80",
+                                                        "shape": "circle",
+                                                        "width": 190,
+                                                        "height": 190
+                                                    }
+                                                },
+                                                {
+                                                    "type": "spacer",
+                                                    "height": 15
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "props": {
+                                                        "content": "The Ultimate Slider",
+                                                        "fontFamily": "$fonts.title",
+                                                        "fontSize": 20,
+                                                        "color": "$colors.primary",
+                                                        "textAlign": "center"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "props": {
+                                                        "content": "A5 Japanese Wagyu beef, truffle aioli, caramelized shallots, brioche bun.",
+                                                        "fontFamily": "$fonts.body",
+                                                        "fontSize": 12,
+                                                        "color": "$colors.muted",
+                                                        "textAlign": "center"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "spacer",
+                                                    "height": 10
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "props": {
+                                                        "content": "$24",
+                                                        "fontFamily": "$fonts.title",
+                                                        "fontSize": 24,
+                                                        "color": "$colors.secondary",
+                                                        "textAlign": "center"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "layout": "stack",
+                                            "width": 230,
+                                            "props": {
+                                                "fill": "#fff",
+                                                "shadow": {
+                                                    "color": "rgba(0,0,0,0.1)",
+                                                    "blur": 10,
+                                                    "offsetY": 4
+                                                },
+                                                "cornerRadius": 8
+                                            },
+                                            "padding": 20,
+                                            "children": [
+                                                {
+                                                    "type": "image",
+                                                    "props": {
+                                                        "src": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=400&q=80",
+                                                        "shape": "circle",
+                                                        "width": 190,
+                                                        "height": 190
+                                                    }
+                                                },
+                                                {
+                                                    "type": "spacer",
+                                                    "height": 15
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "props": {
+                                                        "content": "Lobster Roll",
+                                                        "fontFamily": "$fonts.title",
+                                                        "fontSize": 20,
+                                                        "color": "$colors.primary",
+                                                        "textAlign": "center"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "props": {
+                                                        "content": "Fresh Maine lobster, warm drawn butter, chives, toasted split-top bun.",
+                                                        "fontFamily": "$fonts.body",
+                                                        "fontSize": 12,
+                                                        "color": "$colors.muted",
+                                                        "textAlign": "center"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "spacer",
+                                                    "height": 10
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "props": {
+                                                        "content": "$28",
+                                                        "fontFamily": "$fonts.title",
+                                                        "fontSize": 24,
+                                                        "color": "$colors.secondary",
+                                                        "textAlign": "center"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "page-3",
+            "layout": "columns",
+            "width": 595,
+            "height": 842,
+            "columnWidths": [
+                1,
+                1
+            ],
+            "gap": 0,
+            "children": [
+                {
+                    "layout": "stack",
+                    "props": {
+                        "fill": "$colors.primary"
+                    },
+                    "padding": 40,
+                    "justify": "center",
+                    "children": [
+                        {
+                            "type": "text",
+                            "props": {
+                                "content": "THE",
+                                "fontFamily": "$fonts.title",
+                                "fontSize": 60,
+                                "color": "#ffffff"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "props": {
+                                "content": "FUSION",
+                                "fontFamily": "$fonts.title",
+                                "fontSize": 60,
+                                "color": "$colors.accent"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "props": {
+                                "content": "PROJECT",
+                                "fontFamily": "$fonts.title",
+                                "fontSize": 60,
+                                "color": "#ffffff"
+                            }
+                        },
+                        {
+                            "type": "spacer",
+                            "height": 40
+                        },
+                        {
+                            "type": "text",
+                            "props": {
+                                "content": "Our mission is to bring the chaotic, vibrant energy of Tokyo night markets to your table. We blend traditional techniques with bold, modern flavors to create something entirely new.",
+                                "fontFamily": "$fonts.body",
+                                "fontSize": 16,
+                                "color": "#ccc",
+                                "lineHeight": 1.6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "props": {
+                        "fill": "#fff"
+                    },
+                    "padding": 40,
+                    "gap": 30,
+                    "justify": "center",
+                    "children": [
+                        {
+                            "type": "image",
+                            "props": {
+                                "src": "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=400&q=80",
+                                "shape": "rect",
+                                "width": 220,
+                                "height": 220,
+                                "rotation": 5,
+                                "stroke": "#eee",
+                                "strokeWidth": 10,
+                                "shadow": {
+                                    "color": "rgba(0,0,0,0.2)",
+                                    "blur": 10
+                                }
+                            }
+                        },
+                        {
+                            "type": "image",
+                            "props": {
+                                "src": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+                                "shape": "rect",
+                                "width": 220,
+                                "height": 220,
+                                "rotation": -5,
+                                "stroke": "#eee",
+                                "strokeWidth": 10,
+                                "shadow": {
+                                    "color": "rgba(0,0,0,0.2)",
+                                    "blur": 10
+                                }
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "props": {
+                                "content": "EST. 2024",
+                                "fontFamily": "$fonts.title",
+                                "fontSize": 30,
+                                "color": "$colors.dark_blue",
+                                "textAlign": "center"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "page-4",
+            "layout": "stack",
+            "width": 595,
+            "height": 842,
+            "children": [
+                {
+                    "layout": "stack",
+                    "height": 421,
+                    "props": {
+                        "fill": "$colors.teal"
+                    },
+                    "padding": 40,
+                    "children": [
+                        {
+                            "type": "text",
+                            "props": {
+                                "content": "LIQUID COURAGE",
+                                "fontFamily": "$fonts.title",
+                                "fontSize": 48,
+                                "color": "#fff"
+                            }
+                        },
+                        {
+                            "type": "spacer",
+                            "height": 20
+                        },
+                        {
+                            "layout": "row",
+                            "justify": "between",
+                            "alignItems": "center",
+                            "children": [
+                                {
+                                    "layout": "stack",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Yuzu Highball",
+                                                "fontSize": 20,
+                                                "color": "#fff",
+                                                "fontFamily": "$fonts.title"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Japanese whiskey, yuzu, soda, mint",
+                                                "fontSize": 12,
+                                                "color": "#e0f7fa",
+                                                "fontFamily": "$fonts.body"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "$12",
+                                        "fontSize": 20,
+                                        "color": "#fff",
+                                        "fontFamily": "$fonts.title"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "spacer",
+                            "height": 15
+                        },
+                        {
+                            "layout": "row",
+                            "justify": "between",
+                            "alignItems": "center",
+                            "children": [
+                                {
+                                    "layout": "stack",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Sake Flight",
+                                                "fontSize": 20,
+                                                "color": "#fff",
+                                                "fontFamily": "$fonts.title"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Selection of Junmai, Ginjo, and Daiginjo",
+                                                "fontSize": 12,
+                                                "color": "#e0f7fa",
+                                                "fontFamily": "$fonts.body"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "$18",
+                                        "fontSize": 20,
+                                        "color": "#fff",
+                                        "fontFamily": "$fonts.title"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "spacer",
+                            "height": 15
+                        },
+                        {
+                            "layout": "row",
+                            "justify": "between",
+                            "alignItems": "center",
+                            "children": [
+                                {
+                                    "layout": "stack",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Matcha Latte",
+                                                "fontSize": 20,
+                                                "color": "#fff",
+                                                "fontFamily": "$fonts.title"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Ceremonial grade matcha, steamed oat milk",
+                                                "fontSize": 12,
+                                                "color": "#e0f7fa",
+                                                "fontFamily": "$fonts.body"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "$6",
+                                        "fontSize": 20,
+                                        "color": "#fff",
+                                        "fontFamily": "$fonts.title"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "layout": "stack",
+                    "height": 421,
+                    "props": {
+                        "fill": "$colors.secondary"
+                    },
+                    "padding": 40,
+                    "children": [
+                        {
+                            "type": "text",
+                            "props": {
+                                "content": "SWEET ENDINGS",
+                                "fontFamily": "$fonts.title",
+                                "fontSize": 48,
+                                "color": "#fff"
+                            }
+                        },
+                        {
+                            "type": "spacer",
+                            "height": 20
+                        },
+                        {
+                            "layout": "row",
+                            "justify": "between",
+                            "alignItems": "center",
+                            "children": [
+                                {
+                                    "layout": "stack",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Mochi Ice Cream",
+                                                "fontSize": 20,
+                                                "color": "#fff",
+                                                "fontFamily": "$fonts.title"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Green tea, Mango, Strawberry",
+                                                "fontSize": 12,
+                                                "color": "#ffe0b2",
+                                                "fontFamily": "$fonts.body"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "$8",
+                                        "fontSize": 20,
+                                        "color": "#fff",
+                                        "fontFamily": "$fonts.title"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "spacer",
+                            "height": 15
+                        },
+                        {
+                            "layout": "row",
+                            "justify": "between",
+                            "alignItems": "center",
+                            "children": [
+                                {
+                                    "layout": "stack",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Castella Cake",
+                                                "fontSize": 20,
+                                                "color": "#fff",
+                                                "fontFamily": "$fonts.title"
+                                            }
+                                        },
+                                        {
+                                            "type": "text",
+                                            "props": {
+                                                "content": "Honey sponge cake with whipped cream",
+                                                "fontSize": 12,
+                                                "color": "#ffe0b2",
+                                                "fontFamily": "$fonts.body"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "props": {
+                                        "content": "$10",
+                                        "fontSize": 20,
+                                        "color": "#fff",
+                                        "fontFamily": "$fonts.title"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,443 @@
+{
+    "id": "slate-grill",
+    "name": "Slate Grill",
+    "version": "1.0",
+    "meta": {
+        "category": "Restaurant",
+        "orientation": "portrait",
+        "thumbnail": "/assets/templates/slate-grill.png"
+    },
+    "style": {
+        "background": "#1a1a1a",
+        "fonts": {
+            "heading": "Bebas Neue",
+            "body": "Manrope"
+        },
+        "colors": {
+            "primary": "#ffffff",
+            "secondary": "#cccccc",
+            "accent": "#f4c430"
+        }
+    },
+    "pages": [
+        {
+            "id": "cover",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "FOOD\nMENU",
+                    "position": {
+                        "x": 40,
+                        "y": 80,
+                        "width": 300
+                    },
+                    "fontSize": 72,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "lineHeight": 0.9
+                },
+                {
+                    "type": "text",
+                    "content": "Get a 30% discount voucher on the website.",
+                    "position": {
+                        "x": 40,
+                        "y": 230,
+                        "width": 250
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg",
+                    "position": {
+                        "x": 350,
+                        "y": 40,
+                        "width": 210,
+                        "height": 200
+                    },
+                    "clipShape": "rounded",
+                    "clipRadius": 15,
+                    "fit": "cover"
+                },
+                {
+                    "type": "menuSection",
+                    "title": "MAIN COURSE",
+                    "position": {
+                        "x": 40,
+                        "y": 280,
+                        "width": 250
+                    },
+                    "showPriceBubble": false,
+                    "items": [
+                        {
+                            "name": "Cheeseburger",
+                            "price": "34"
+                        },
+                        {
+                            "name": "Cheese Sandwich",
+                            "price": "22"
+                        },
+                        {
+                            "name": "Chicken Burgers",
+                            "price": "24"
+                        },
+                        {
+                            "name": "Spicy Chicken",
+                            "price": "33"
+                        },
+                        {
+                            "name": "Hot Dog",
+                            "price": "23"
+                        }
+                    ]
+                },
+                {
+                    "type": "menuSection",
+                    "title": "APPETIZERS",
+                    "position": {
+                        "x": 310,
+                        "y": 280,
+                        "width": 250
+                    },
+                    "showPriceBubble": false,
+                    "items": [
+                        {
+                            "name": "Fruit Salad",
+                            "price": "13"
+                        },
+                        {
+                            "name": "Cocktails",
+                            "price": "12"
+                        },
+                        {
+                            "name": "Nuggets",
+                            "price": "14"
+                        },
+                        {
+                            "name": "Sandwich",
+                            "price": "13"
+                        },
+                        {
+                            "name": "French Fries",
+                            "price": "15"
+                        }
+                    ]
+                },
+                {
+                    "type": "menuSection",
+                    "title": "BEVERAGE",
+                    "position": {
+                        "x": 310,
+                        "y": 520,
+                        "width": 250
+                    },
+                    "showPriceBubble": false,
+                    "items": [
+                        {
+                            "name": "Milk Shake",
+                            "price": "34"
+                        },
+                        {
+                            "name": "Iced Tea",
+                            "price": "22"
+                        },
+                        {
+                            "name": "Orange Juice",
+                            "price": "24"
+                        },
+                        {
+                            "name": "Lemon Tea",
+                            "price": "33"
+                        },
+                        {
+                            "name": "Iced Coffee",
+                            "price": "23"
+                        }
+                    ]
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg",
+                    "position": {
+                        "x": 40,
+                        "y": 600,
+                        "width": 210,
+                        "height": 180
+                    },
+                    "clipShape": "rounded",
+                    "clipRadius": 15,
+                    "fit": "cover"
+                },
+                {
+                    "type": "text",
+                    "content": "MORE INFORMATION",
+                    "position": {
+                        "x": "center",
+                        "y": 800,
+                        "width": 400
+                    },
+                    "fontSize": 12,
+                    "fontFamily": "heading",
+                    "fontWeight": "bold",
+                    "color": "accent",
+                    "textAlign": "center"
+                },
+                {
+                    "type": "text",
+                    "content": "123-456-7890  •  www.reallygreatsite.com  •  123 Anywhere St., Any City",
+                    "position": {
+                        "x": "center",
+                        "y": 820,
+                        "width": 500
+                    },
+                    "fontSize": 10,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "textAlign": "center"
+                }
+            ]
+        },
+        {
+            "id": "grill",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "FROM THE\nGRILL",
+                    "position": {
+                        "x": 40,
+                        "y": 80,
+                        "width": 300
+                    },
+                    "fontSize": 72,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "lineHeight": 0.9
+                },
+                {
+                    "type": "text",
+                    "content": "Sizzling hot and fresh.",
+                    "position": {
+                        "x": 40,
+                        "y": 230,
+                        "width": 250
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary"
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/1251198/pexels-photo-1251198.jpeg",
+                    "position": {
+                        "x": 40,
+                        "y": 40,
+                        "width": 150,
+                        "height": 150
+                    },
+                    "clipShape": "rounded",
+                    "clipRadius": 15,
+                    "fit": "cover"
+                },
+                {
+                    "type": "menuSection",
+                    "title": "STEAKS",
+                    "position": {
+                        "x": 40,
+                        "y": 280,
+                        "width": 250
+                    },
+                    "showPriceBubble": false,
+                    "items": [
+                        {
+                            "name": "Ribeye Steak",
+                            "price": "45"
+                        },
+                        {
+                            "name": "Sirloin Cut",
+                            "price": "38"
+                        },
+                        {
+                            "name": "T-Bone Special",
+                            "price": "52"
+                        },
+                        {
+                            "name": "Filet Mignon",
+                            "price": "48"
+                        },
+                        {
+                            "name": "Steak Tartare",
+                            "price": "35"
+                        }
+                    ]
+                },
+                {
+                    "type": "menuSection",
+                    "title": "BURGERS",
+                    "position": {
+                        "x": 40,
+                        "y": 520,
+                        "width": 250
+                    },
+                    "showPriceBubble": false,
+                    "items": [
+                        {
+                            "name": "Classic Beef",
+                            "price": "18"
+                        },
+                        {
+                            "name": "Bacon Cheese",
+                            "price": "22"
+                        },
+                        {
+                            "name": "Mushroom Swiss",
+                            "price": "21"
+                        },
+                        {
+                            "name": "Double Patty",
+                            "price": "26"
+                        }
+                    ]
+                },
+                {
+                    "type": "menuSection",
+                    "title": "SIDES",
+                    "position": {
+                        "x": 310,
+                        "y": 280,
+                        "width": 250
+                    },
+                    "showPriceBubble": false,
+                    "items": [
+                        {
+                            "name": "Creamy Slaw",
+                            "price": "8"
+                        },
+                        {
+                            "name": "Onion Rings",
+                            "price": "9"
+                        },
+                        {
+                            "name": "Mac & Cheese",
+                            "price": "12"
+                        },
+                        {
+                            "name": "Garlic Bread",
+                            "price": "7"
+                        }
+                    ]
+                },
+                {
+                    "type": "menuSection",
+                    "title": "DESSERTS",
+                    "position": {
+                        "x": 310,
+                        "y": 480,
+                        "width": 250
+                    },
+                    "showPriceBubble": false,
+                    "items": [
+                        {
+                            "name": "Choco Brownie",
+                            "price": "14"
+                        },
+                        {
+                            "name": "Cheesecake",
+                            "price": "15"
+                        },
+                        {
+                            "name": "Apple Pie",
+                            "price": "13"
+                        },
+                        {
+                            "name": "Ice Cream",
+                            "price": "8"
+                        }
+                    ]
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg",
+                    "position": {
+                        "x": 405,
+                        "y": 642,
+                        "width": 150,
+                        "height": 150
+                    },
+                    "clipShape": "rounded",
+                    "clipRadius": 15,
+                    "fit": "cover"
+                }
+            ]
+        },
+        {
+            "id": "story",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "OUR\nSTORY",
+                    "position": {
+                        "x": 40,
+                        "y": 80,
+                        "width": 300
+                    },
+                    "fontSize": 72,
+                    "fontFamily": "heading",
+                    "color": "primary",
+                    "lineHeight": 0.9
+                },
+                {
+                    "type": "image",
+                    "src": "https://images.pexels.com/photos/671956/pexels-photo-671956.jpeg",
+                    "position": {
+                        "x": "center",
+                        "y": 280,
+                        "width": 515,
+                        "height": 250
+                    },
+                    "clipShape": "rounded",
+                    "clipRadius": 15,
+                    "fit": "cover"
+                },
+                {
+                    "type": "text",
+                    "content": "Founded in 1998, Slate Grill has been serving the finest cuts of meat and freshest produce to our community. We believe in sustainable farming, authentic flavors, and the joy of shared meals. Every dish tells a story of passion and tradition.",
+                    "position": {
+                        "x": 40,
+                        "y": 560,
+                        "width": 515
+                    },
+                    "fontSize": 16,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "lineHeight": 1.6
+                },
+                {
+                    "type": "text",
+                    "content": "VISIT US",
+                    "position": {
+                        "x": 40,
+                        "y": 680
+                    },
+                    "fontSize": 36,
+                    "fontFamily": "heading",
+                    "color": "accent"
+                },
+                {
+                    "type": "text",
+                    "content": "+1 123-456-7890\nhello@slategrill.com\n123 Culinary Ave, Food District, NY",
+                    "position": {
+                        "x": 40,
+                        "y": 730,
+                        "width": 400
+                    },
+                    "fontSize": 14,
+                    "fontFamily": "body",
+                    "color": "secondary",
+                    "lineHeight": 1.5
+                }
+            ]
+        }
+    ]
+}

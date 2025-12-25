@@ -1,0 +1,215 @@
+{
+    "version": "3.0",
+    "id": "auto-layout-test",
+    "name": "Auto-Layout Test",
+    "meta": {
+        "category": "Test",
+        "orientation": "portrait"
+    },
+    "tokens": {
+        "colors": {
+            "primary": "#1a1a1a",
+            "secondary": "#666666",
+            "accent": "#e63946",
+            "background": "#f4f1ea"
+        },
+        "fonts": {
+            "heading": "Bebas Neue",
+            "body": "Manrope"
+        }
+    },
+    "components": {
+        "pageTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 48,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.primary"
+            }
+        },
+        "sectionTitle": {
+            "type": "text",
+            "props": {
+                "fontSize": 28,
+                "fontFamily": "$fonts.heading",
+                "color": "$colors.accent"
+            }
+        },
+        "menuItem": {
+            "type": "text",
+            "props": {
+                "fontSize": 16,
+                "fontFamily": "$fonts.body",
+                "color": "$colors.primary",
+                "lineHeight": 1.4
+            }
+        },
+        "divider": {
+            "type": "shape",
+            "props": {
+                "shape": "rect",
+                "fill": "$colors.secondary",
+                "height": 2
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "menu",
+            "background": "$colors.background",
+            "layout": "stack",
+            "padding": 40,
+            "gap": 24,
+            "children": [
+                {
+                    "use": "pageTitle",
+                    "props": {
+                        "content": "THE MENU"
+                    }
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "layout": "columns",
+                    "gap": 40,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 16,
+                            "children": [
+                                {
+                                    "use": "sectionTitle",
+                                    "props": {
+                                        "content": "STARTERS"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Spring Rolls - $8\nCrispy vegetable rolls with sweet chili"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Soup of the Day - $6\nAsk your server for today's selection"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Bruschetta - $9\nToasted bread with tomato and basil"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Calamari - $12\nLightly fried with aioli dip"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 16,
+                            "children": [
+                                {
+                                    "use": "sectionTitle",
+                                    "props": {
+                                        "content": "MAINS"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Grilled Salmon - $24\nWith seasonal vegetables"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Ribeye Steak - $32\nCooked to your preference"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Pasta Primavera - $18\nFresh vegetables in cream sauce"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Chicken Parmesan - $20\nBreaded chicken with marinara"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "use": "sectionTitle",
+                    "props": {
+                        "content": "DESSERTS"
+                    }
+                },
+                {
+                    "layout": "columns",
+                    "gap": 40,
+                    "children": [
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Chocolate Cake - $8"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Cheesecake - $9"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "stack",
+                            "gap": 12,
+                            "children": [
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Ice Cream - $6"
+                                    }
+                                },
+                                {
+                                    "use": "menuItem",
+                                    "props": {
+                                        "content": "Tiramisu - $10"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "use": "divider"
+                },
+                {
+                    "type": "text",
+                    "props": {
+                        "content": "All prices include tax. Gratuity not included.",
+                        "fontSize": 12,
+                        "fontFamily": "$fonts.body",
+                        "color": "$colors.secondary",
+                        "textAlign": "center"
+                    }
+                }
+            ]
+        }
+    ]
+}
